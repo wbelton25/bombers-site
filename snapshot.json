@@ -1,0 +1,397 @@
+{
+ "points": "875",
+ "rank": "27 of 93",
+ "official": [
+  {
+   "date": "08/22/2026",
+   "name": "Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs",
+   "finish": "3rd (Gold)",
+   "points": "450"
+  },
+  {
+   "date": "09/12/2026",
+   "name": "$1,000.00 Marucci Bats to Winner and Runner-Ups-Enter Early Softballs",
+   "finish": "5th (Gold)",
+   "points": "200"
+  },
+  {
+   "date": "09/19/2026",
+   "name": "Chelsea Parker Moneyball -$500.00 Cash or $1,000.00 to Future Events",
+   "finish": "2nd (Silver)",
+   "points": "675"
+  },
+  {
+   "date": "09/26/2026",
+   "name": "Dick's Fall State Backpack Championships-Winner Receive (12) Backpacks",
+   "finish": "",
+   "points": "0"
+  }
+ ],
+ "entries": [
+  {
+   "id": 12817,
+   "name": "Chelsea Parker Moneyball -$500.00 Cash or $1,000.00 to Future Events",
+   "start": "2026-09-19",
+   "end": "2026-09-19",
+   "confirmed": true,
+   "waitlist": false,
+   "age": "10U",
+   "teams": [
+    "10U ALAB SOFTBALL",
+    "ALab 10u Reynolds/Hewitt",
+    "Bandits NC - Black",
+    "Bombers Softball 10U Beck",
+    "Boonies Fastpitch 10U",
+    "Carolina Angels Hustedt",
+    "Carolina Elite Alley '16",
+    "Carolina Lightning 10U Pink",
+    "Carolina Wombats 10U- Gray",
+    "Copperhead Softball",
+    "Dirtbags - Bowen",
+    "LKN Havoc",
+    "Lady Smoke 10U",
+    "MP 10U Lady Bombers-Barrier",
+    "NC Valkyries Fastpitch Softball",
+    "On Deck O’s Hurt",
+    "SFA Stars",
+    "Southern Chaos- Johnson",
+    "The Aces",
+    "USA Impact Oakes",
+    "Uwharrie Fever 10u",
+    "iNNOVATIVE Intensity - Burgess"
+   ],
+   "notes": [
+    "CHELSEA PARKER\"",
+    "BENEFIT ASSISTANCE FUNDRAISER",
+    "MONEY BALL CHAMPIONSHIPS AND A ZONE QUALIFIER\"",
+    "ALL WINNING TEAMS IN ALL AGES ALL BRACKETS WILL RECEIVE $500.00 CASH OR $1,000.00 TO FUTURE TOP GUN EVENTS",
+    "$92,797.92",
+    "HAS BEEN RAISED BY THIS BENEFIT ASSISTANCE PROGRAM FOR ATHLETES THAT NEEDED ASSISTANCE",
+    "CHAMPIONS AND RUNNER UP TEAMS WILL RECEIVE HARLY QUINN VS CATWOMAN CUSTOM MADE JUMBO RINGS , PLUS BANNERS"
+   ]
+  },
+  {
+   "id": 12818,
+   "name": "Dick's Fall State Backpack Championships-Winner Receive (12) Backpacks",
+   "start": "2026-09-26",
+   "end": "2026-09-26",
+   "confirmed": true,
+   "waitlist": false,
+   "age": "10U",
+   "teams": [
+    "Bandits NC - Black",
+    "Bandits NC-Orange",
+    "Bombers Softball 10U Beck",
+    "Cage 2 Stage-Barnes",
+    "Carolina Aces",
+    "Carolina Angels Hustedt",
+    "Carolina Diamond Softball",
+    "Carolina Force",
+    "Carolina Hurricanes- Ford",
+    "Carolina Lightning 10U Pink",
+    "Carolina Lightning 10U Purple",
+    "Carolina Smoke Teal",
+    "Davie Crushers",
+    "Harrisburg Heat 10U",
+    "Knockouts Adams/Salyers",
+    "Knockouts Noel 10U",
+    "Lexington Flying Pigs Elite Young",
+    "Mambas Vardo",
+    "SFA Stars",
+    "Weddington Royals Knight"
+   ],
+   "notes": [
+    "DICK'S FALL STATE",
+    "BACKPACK CHAMPIONSHIPS",
+    "ALL WINNING TEAMS IN ALL AGES ALL BRACKETS WILL RECEIVE (12) TOP GUN-USA BACKPACKS",
+    "ALL WINNING AND RUNNER UP TEAMS WILL RECEIVE (12) TOP GUN-USA CUSTOM MADE JUMBO RINGS, PLUS TEAMS BANNERS\""
+   ]
+  },
+  {
+   "id": 12820,
+   "name": "Big Pink Out Weekend · Big Pink Chains, Pink Bag Tags, Pink Prizes",
+   "start": "2026-10-10",
+   "end": "2026-10-10",
+   "confirmed": false,
+   "waitlist": false,
+   "age": "10U",
+   "teams": [
+    "10U ALAB SOFTBALL",
+    "Bombers Softball 10U Beck",
+    "Carolina Force",
+    "Carolina Lightning 10U Pink",
+    "CoulOak Black Widows - Deko",
+    "Extreme Performance",
+    "Extreme Performance White",
+    "Knockouts Adams/Salyers",
+    "Lady Eagles",
+    "Lexington Flying Pigs Elite Young",
+    "MP 10U Lady Bombers-Barrier",
+    "Mambas Vardo",
+    "Palmetto Reign",
+    "SFA Stars",
+    "USA Impact Oakes",
+    "Weddington Royals Knight"
+   ],
+   "notes": [
+    "PINK OUT WEEKEND",
+    "COME DRESSED IN PINK DURING CANCER AWARENESS MONTH",
+    "TOP GUN BIGGEST",
+    "PINK",
+    "CHAINS THIS WEEKEND",
+    "PINK BAG TAGS",
+    "PINK CUSTOM MADE JUMBO RINGS"
+   ]
+  },
+  {
+   "id": 12822,
+   "name": "Halloween Havoc · Monster Mash Championships with Monster Mash Rings",
+   "start": "2026-10-24",
+   "end": "2026-10-24",
+   "confirmed": false,
+   "waitlist": false,
+   "age": "10U",
+   "teams": [
+    "10U ALAB SOFTBALL",
+    "Bandits NC - Black",
+    "Bandits NC-Orange",
+    "Bombers Softball 10U Beck",
+    "Boonies Fastpitch 10U",
+    "CPR Sirens Orange",
+    "Carolina Angels- Sullivan",
+    "Carolina Colts",
+    "Carolina Force",
+    "Carolina Smoke Teal",
+    "Carolina Wombats 10U- Gray",
+    "Dirtbags Schroeder",
+    "Extreme Performance",
+    "Extreme Performance White",
+    "Knockouts Adams/Salyers",
+    "Lexington Flying Pigs Elite Young",
+    "Mambas Vardo",
+    "NC Phantoms Fastpitch 10u",
+    "On Deck O’s Hurt",
+    "SFA Stars",
+    "Team NC-Goodrum",
+    "Uwharrie Fever 10u",
+    "Weddington Royals Knight"
+   ],
+   "notes": []
+  },
+  {
+   "id": 12418,
+   "name": "This Event Is Now Sold Out · 2027 Schedule Is Coming Soon",
+   "start": "2026-11-13",
+   "end": "2026-11-15",
+   "confirmed": true,
+   "waitlist": false,
+   "age": "10U",
+   "teams": [
+    "Bombers Softball 10U Beck",
+    "Carolina Freedom",
+    "Carolina Wombats 10U- Gray",
+    "Palmetto Heat 10U Whisenant",
+    "TN Mojo 2034-35 Shaw/Parker",
+    "Team North Carolina Tejeda",
+    "Weddington Royals Knight"
+   ],
+   "notes": [
+    "THIS EVENT IS SOLD OUT AD NOW FULL TO CAPACITY",
+    "CLICK HERE for DISCOUNTED HOTELS",
+    "CLICK HERE for 2026 Shipyard Park Rules"
+   ]
+  }
+ ],
+ "events": {
+  "12813": {
+   "name": "Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs",
+   "start": "2026-08-22",
+   "games": [
+    {
+     "key": "12813|Pool Play|1",
+     "section": "Pool Play",
+     "no": "1",
+     "day": "Sun",
+     "time": "9:00 AM",
+     "field": "C. Creek:Field # 3",
+     "opp": "Lady Smoke 10U",
+     "us": "4",
+     "them": "4",
+     "result": "T"
+    },
+    {
+     "key": "12813|Pool Play|5",
+     "section": "Pool Play",
+     "no": "5",
+     "day": "Sun",
+     "time": "11:30 AM",
+     "field": "C. Creek:Field # 3",
+     "opp": "Carolina Force",
+     "us": "8",
+     "them": "4",
+     "result": "W"
+    },
+    {
+     "key": "12813|Gold Bracket|2",
+     "section": "Gold Bracket",
+     "no": "2",
+     "day": "Sun",
+     "time": "4:00 PM",
+     "field": "C. Creek:Field # 4",
+     "opp": "Team North Carolina Tejeda",
+     "us": "3",
+     "them": "8",
+     "result": "L"
+    }
+   ],
+   "finish": "3rd · Gold"
+  },
+  "12816": {
+   "name": "$1,000.00 Marucci Bats to Winner and Runner-Ups-Enter Early Softballs",
+   "start": "2026-09-12",
+   "games": [
+    {
+     "key": "12816|Pool Play|8",
+     "section": "Pool Play",
+     "no": "8",
+     "day": "Sat",
+     "time": "10:15 AM",
+     "field": "Bradford:Field 1",
+     "opp": "Carolina Force",
+     "us": "13",
+     "them": "4",
+     "result": "W"
+    },
+    {
+     "key": "12816|Pool Play|13",
+     "section": "Pool Play",
+     "no": "13",
+     "day": "Sat",
+     "time": "11:30 AM",
+     "field": "Bradford:Field 1",
+     "opp": "⚡️Carolina Lightning 10U Purple⚡️",
+     "us": "11",
+     "them": "4",
+     "result": "W"
+    },
+    {
+     "key": "12816|Gold Bracket|1",
+     "section": "Gold Bracket",
+     "no": "1",
+     "day": "Sat",
+     "time": "3:00 PM",
+     "field": "Bradford:Field 1",
+     "opp": "Mambas Vardo",
+     "us": "7",
+     "them": "8",
+     "result": "L"
+    }
+   ],
+   "finish": "5th · Gold"
+  },
+  "12817": {
+   "name": "Chelsea Parker Moneyball -$500.00 Cash or $1,000.00 to Future Events",
+   "start": "2026-09-19",
+   "games": [
+    {
+     "key": "12817|Pool Play|6",
+     "section": "Pool Play",
+     "no": "6",
+     "day": "Sat",
+     "time": "10:15 AM",
+     "field": "Bradford:Field 3",
+     "opp": "ALab 10u Reynolds/Hewitt",
+     "us": "3",
+     "them": "4",
+     "result": "L"
+    },
+    {
+     "key": "12817|Pool Play|12",
+     "section": "Pool Play",
+     "no": "12",
+     "day": "Sat",
+     "time": "12:45 PM",
+     "field": "Bradford:Field 3",
+     "opp": "MP 10U Lady Bombers-Barrier",
+     "us": "15",
+     "them": "1",
+     "result": "W"
+    },
+    {
+     "key": "12817|Silver Bracket|3",
+     "section": "Silver Bracket",
+     "no": "3",
+     "day": "Sat",
+     "time": "4:00 PM",
+     "field": "Bradford:Field 2",
+     "opp": "On Deck O’s Hurt",
+     "us": "14",
+     "them": "1",
+     "result": "W"
+    },
+    {
+     "key": "12817|Silver Bracket|4",
+     "section": "Silver Bracket",
+     "no": "4",
+     "day": "Sat",
+     "time": "5:30 PM",
+     "field": "Bradford:Field 2",
+     "opp": "10U ALAB SOFTBALL",
+     "us": "4",
+     "them": "10",
+     "result": "L"
+    }
+   ],
+   "finish": "2nd · Silver"
+  },
+  "12818": {
+   "name": "Dick's Fall State Backpack Championships-Winner Receive (12) Backpacks",
+   "start": "2026-09-26",
+   "games": [
+    {
+     "key": "12818|Pool Play|1",
+     "section": "Pool Play",
+     "no": "1",
+     "day": "Sat",
+     "time": "8:30 AM",
+     "field": "RRC:Field 2",
+     "opp": "⚡️Carolina Lightning 10U Pink⚡️",
+     "us": "6",
+     "them": "2",
+     "result": "W"
+    },
+    {
+     "key": "12818|Pool Play|11",
+     "section": "Pool Play",
+     "no": "11",
+     "day": "Sat",
+     "time": "11:00 AM",
+     "field": "RRC:Field 2",
+     "opp": "Carolina Angels Hustedt",
+     "us": "7",
+     "them": "6",
+     "result": "W"
+    },
+    {
+     "key": "12818|Gold Bracket|1",
+     "section": "Gold Bracket",
+     "no": "1",
+     "day": "Sat",
+     "time": "2:00 PM",
+     "field": "RRC:Field 2",
+     "opp": "Weddington Royals Knight",
+     "us": "2",
+     "them": "5",
+     "result": "L"
+    }
+   ],
+   "finish": "3rd · Gold"
+  },
+  "12820": {
+   "name": "Big Pink Out Weekend · Big Pink Chains, Pink Bag Tags, Pink Prizes",
+   "start": "2026-10-10",
+   "games": [],
+   "finish": null
+  }
+ }
+}
