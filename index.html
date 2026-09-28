@@ -251,7 +251,7 @@ a.pl-card:hover{border-color:var(--brand)}
 .rrow.h-win{border-left-color:var(--win);background:color-mix(in srgb,var(--win) 7%,var(--card))}.rrow.h-loss{border-left-color:var(--loss);background:color-mix(in srgb,var(--loss) 7%,var(--card))}
 .rrow.h-mixed{border-left-color:#f08a00;background:color-mix(in srgb,#f08a00 8%,var(--card))}.rrow.h-tie{border-left-color:var(--tie);background:color-mix(in srgb,var(--tie) 8%,var(--card))}
 .rrow.ghost{display:block;text-align:center;font-size:.78rem;color:var(--muted);border:2px dashed var(--brand);background:transparent;padding:6px 10px}
-.rrow.prov{opacity:.72}
+.rrow.prov{opacity:.72}.fp-list{display:flex;flex-direction:column;gap:6px;margin:8px 0}.fp-list .rval{min-width:62px}.fp-list .rn{white-space:normal;overflow:visible;line-height:1.25}.fp-list .rsub>span:last-child{white-space:normal}.fp-list .rval .wp{font-size:.9rem;padding:2px 8px}
 .filters{gap:8px}.filters>.seg:first-child{flex:1 1 100%;display:flex}.filters>.seg:first-child button{flex:1}
 @media (max-width:560px){.filters select{flex:1}}
 .stars-inline{margin:10px 0 4px;padding:10px 12px;border-radius:12px;background:color-mix(in srgb,var(--accent) 12%,transparent)}.stars-inline h4{margin:0 0 2px;font-size:.9rem}
@@ -333,37 +333,101 @@ details.fold{padding:12px 14px}details.fold>summary{cursor:pointer}details.fold[
       <p class="empty">Game times aren't posted yet. Top Gun usually posts schedules Wednesday–Thursday before the event.</p>
       
       <details class="bigtable field-prev"><summary>Field preview · 16 10U teams entered · Bombers rate #7 of 16 <span class="muted">· pools aren't drawn yet</span></summary>
-      <p class="small">The Bombers rate <b>#7 of 16</b> rated teams in this field and would be favored against <b>9</b> of the other 15. Win % and projected scores come from the power ratings; projected runs are rough (typically off by about 3 runs per team).</p>
-      <div class="scroll"><table><thead><tr><th class="num">#</th><th>Team</th><th>Class</th><th class="num opt">Rating</th><th class="num">Our win %</th><th class="num">Projected</th><th class="opt"></th></tr></thead><tbody>
-      <tr class=""><td class="num">1</td><td>Lady Eagles<div class="muted small">Chesnee, SC · not yet confirmed</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+5.9<div class="muted small">#10</div></td><td class="num"><span class="wp" style="--p:14">14%</span></td><td class="num nowrap">3–8</td><td class="opt"></td></tr><tr class=""><td class="num">2</td><td>Extreme Performance<div class="muted small">Salisbury, NC · not yet confirmed</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+5.5<div class="muted small">#17</div></td><td class="num"><span class="wp" style="--p:16">16%</span></td><td class="num nowrap">3–7</td><td class="opt"></td></tr><tr class=""><td class="num">3</td><td>SFA Stars<div class="muted small">Matthews, NC · not yet confirmed</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+4.0<div class="muted small">#36</div></td><td class="num"><span class="wp" style="--p:25">25%</span></td><td class="num nowrap">4–7</td><td class="opt"></td></tr><tr class=""><td class="num">4</td><td>Lexington Flying Pigs Elite Young<div class="muted small">Lexington, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+1.9<div class="muted small">#73</div></td><td class="num"><span class="wp" style="--p:42">42%</span></td><td class="num nowrap">5–6</td><td class="opt"></td></tr><tr class=""><td class="num">5</td><td>Extreme Performance White<div class="muted small">Salisbury, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+1.7<div class="muted small">#75</div></td><td class="num"><span class="wp" style="--p:43">43%</span></td><td class="num nowrap">5–6</td><td class="opt"></td></tr><tr class=""><td class="num">6</td><td>10U ALAB SOFTBALL<div class="muted small">MAIDEN, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+1.3<div class="muted small">#83</div></td><td class="num"><span class="wp" style="--p:47">47%</span></td><td class="num nowrap">6–6</td><td class="opt"><button type="button" class="chip c-L" data-tip="Sat, Sep 19 · 5:30 PM
+      <p class="small">The Bombers rate <b>#7 of 16</b> rated teams in this field and would be favored against <b>9</b> of the other 15. Each row shows our win chance and projected score (us–them), from the power ratings; projected runs are rough (typically off by about 3 runs per team).</p>
+      <div class="rlist fp-list">
+      <div class="rrow ">
+          <span class="rk"><b>1</b><small>pwr #10</small></span>
+          <span class="rmain"><b class="rn">Lady Eagles</b><span class="rsub"><span class="cls cls-B">B</span><span>Chesnee, SC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:14" title="Bombers' chance to win">14%</span><small class="nowrap">proj 3–8</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>2</b><small>pwr #17</small></span>
+          <span class="rmain"><b class="rn">Extreme Performance</b><span class="rsub"><span class="cls cls-B">B</span><span>Salisbury, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:16" title="Bombers' chance to win">16%</span><small class="nowrap">proj 3–7</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>3</b><small>pwr #36</small></span>
+          <span class="rmain"><b class="rn">SFA Stars</b><span class="rsub"><span class="cls cls-B">B</span><span>Matthews, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:25" title="Bombers' chance to win">25%</span><small class="nowrap">proj 4–7</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>4</b><small>pwr #73</small></span>
+          <span class="rmain"><b class="rn">Lexington Flying Pigs Elite Young</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Lexington, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:42" title="Bombers' chance to win">42%</span><small class="nowrap">proj 5–6</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>5</b><small>pwr #75</small></span>
+          <span class="rmain"><b class="rn">Extreme Performance White</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Salisbury, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:43" title="Bombers' chance to win">43%</span><small class="nowrap">proj 5–6</small></span>
+        </div><div class="rrow h-loss">
+          <span class="rk"><b>6</b><small>pwr #83</small></span>
+          <span class="rmain"><b class="rn">10U ALAB SOFTBALL</b><span class="rsub"><span class="cls cls-BB">BB</span><span>MAIDEN, NC · not confirmed</span></span><span class="rchips"><button type="button" class="chip c-L" data-tip="Sat, Sep 19 · 5:30 PM
 Chelsea Parker Moneyball -$500.00 Cash or $1,000.00 to Future Events
 Bradford Park, Field 2 — 17005 Davidson-Concord Rd. Huntersville, NC 28078
 Silver bracket · Final (game 4)
 Seeds: us #6 vs 10U ALAB SOFTBALL #7
-Finished: us 2nd Silver · them 1st Silver">L 4–10</button></td></tr><tr class="us"><td class="num">7</td><td>Bombers Softball 10U Beck<div class="muted small">Rock Hill, SC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+0.9<div class="muted small">#95</div></td><td class="num"></td><td class="num nowrap"><span class="muted small">us</span></td><td class="opt"></td></tr><tr class=""><td class="num">8</td><td>CoulOak Black Widows - Deko<div class="muted small">Charlotte, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">0.0<div class="muted small">#112</div></td><td class="num"><span class="wp" style="--p:58">58%</span></td><td class="num nowrap">5–5</td><td class="opt"></td></tr><tr class=""><td class="num">9</td><td>Weddington Royals Knight<div class="muted small">Weddington, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−0.3<div class="muted small">#119</div></td><td class="num"><span class="wp" style="--p:60">60%</span></td><td class="num nowrap">6–5</td><td class="opt"><button type="button" class="chip c-L" data-tip="Sat, Sep 26 · 2:00 PM
+Finished: us 2nd Silver · them 1st Silver">L 4–10</button></span></span>
+          <span class="rval"><span class="wp" style="--p:47" title="Bombers' chance to win">47%</span><small class="nowrap">proj 6–6</small></span>
+        </div><div class="rrow us">
+          <span class="rk"><b>7</b><small>pwr #95</small></span>
+          <span class="rmain"><b class="rn">Bombers Softball 10U Beck</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Rock Hill, SC · not confirmed</span></span></span>
+          <span class="rval"><small>us</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>8</b><small>pwr #112</small></span>
+          <span class="rmain"><b class="rn">CoulOak Black Widows - Deko</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Charlotte, NC</span></span></span>
+          <span class="rval"><span class="wp" style="--p:58" title="Bombers' chance to win">58%</span><small class="nowrap">proj 5–5</small></span>
+        </div><div class="rrow h-loss">
+          <span class="rk"><b>9</b><small>pwr #119</small></span>
+          <span class="rmain"><b class="rn">Weddington Royals Knight</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Weddington, NC</span></span><span class="rchips"><button type="button" class="chip c-L" data-tip="Sat, Sep 26 · 2:00 PM
 Dick&#39;s Fall State Backpack Championships-Winner Receive (12) Backpacks
 Rocky River Complex, Field 2 — 5454 Rocky River Rd. Concord, NC 28025
 Gold bracket · Semifinal (game 1)
 Seeds: us #4 vs Weddington Royals Knight #1
-Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></td></tr><tr class=""><td class="num">10</td><td>Mambas Vardo<div class="muted small">Mint Hill, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−0.9<div class="muted small">#133</div></td><td class="num"><span class="wp" style="--p:65">65%</span></td><td class="num nowrap">7–5</td><td class="opt"><button type="button" class="chip c-L" data-tip="Sat, Sep 12 · 3:00 PM
+Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></span></span>
+          <span class="rval"><span class="wp" style="--p:60" title="Bombers' chance to win">60%</span><small class="nowrap">proj 6–5</small></span>
+        </div><div class="rrow h-loss">
+          <span class="rk"><b>10</b><small>pwr #133</small></span>
+          <span class="rmain"><b class="rn">Mambas Vardo</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Mint Hill, NC · not confirmed</span></span><span class="rchips"><button type="button" class="chip c-L" data-tip="Sat, Sep 12 · 3:00 PM
 $1,000.00 Marucci Bats to Winner and Runner-Ups-Enter Early Softballs
 Bradford Park, Field 1 — 17005 Davidson-Concord Rd. Huntersville, NC 28078
 Gold bracket · Quarterfinal (game 1)
 Seeds: us #5 vs Mambas Vardo #4
-Finished: us 5th Gold · them still alive">L 7–8</button></td></tr><tr class=""><td class="num">11</td><td>Carolina Lightning 10U Pink<div class="muted small">Mount Pleasant, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−1.4<div class="muted small">#144</div></td><td class="num"><span class="wp" style="--p:69">69%</span></td><td class="num nowrap">7–4</td><td class="opt"><button type="button" class="chip c-W" data-tip="Sat, Sep 26 · 8:30 AM
+Finished: us 5th Gold · them still alive">L 7–8</button></span></span>
+          <span class="rval"><span class="wp" style="--p:65" title="Bombers' chance to win">65%</span><small class="nowrap">proj 7–5</small></span>
+        </div><div class="rrow h-win">
+          <span class="rk"><b>11</b><small>pwr #144</small></span>
+          <span class="rmain"><b class="rn">Carolina Lightning 10U Pink</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Mount Pleasant, NC · not confirmed</span></span><span class="rchips"><button type="button" class="chip c-W" data-tip="Sat, Sep 26 · 8:30 AM
 Dick&#39;s Fall State Backpack Championships-Winner Receive (12) Backpacks
 Rocky River Complex, Field 2 — 5454 Rocky River Rd. Concord, NC 28025
-Pool Play · game 1">W 6–2</button></td></tr><tr class=""><td class="num">12</td><td>Knockouts Adams/Salyers<div class="muted small">Harrisburg, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−1.7<div class="muted small">#155</div></td><td class="num"><span class="wp" style="--p:71">71%</span></td><td class="num nowrap">7–5</td><td class="opt"></td></tr><tr class=""><td class="num">13</td><td>USA Impact Oakes<div class="muted small">Monroe, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−2.1<div class="muted small">#163</div></td><td class="num"><span class="wp" style="--p:74">74%</span></td><td class="num nowrap">7–4</td><td class="opt"></td></tr><tr class=""><td class="num">14</td><td>Carolina Force<div class="muted small">Concord, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−2.5<div class="muted small">#171</div></td><td class="num"><span class="wp" style="--p:77">77%</span></td><td class="num nowrap">8–4</td><td class="opt"><button type="button" class="chip c-W" data-tip="Sat, Sep 12 · 10:15 AM
+Pool Play · game 1">W 6–2</button></span></span>
+          <span class="rval"><span class="wp" style="--p:69" title="Bombers' chance to win">69%</span><small class="nowrap">proj 7–4</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>12</b><small>pwr #155</small></span>
+          <span class="rmain"><b class="rn">Knockouts Adams/Salyers</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Harrisburg, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:71" title="Bombers' chance to win">71%</span><small class="nowrap">proj 7–5</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>13</b><small>pwr #163</small></span>
+          <span class="rmain"><b class="rn">USA Impact Oakes</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Monroe, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:74" title="Bombers' chance to win">74%</span><small class="nowrap">proj 7–4</small></span>
+        </div><div class="rrow h-win">
+          <span class="rk"><b>14</b><small>pwr #171</small></span>
+          <span class="rmain"><b class="rn">Carolina Force</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Concord, NC</span></span><span class="rchips"><button type="button" class="chip c-W" data-tip="Sat, Sep 12 · 10:15 AM
 $1,000.00 Marucci Bats to Winner and Runner-Ups-Enter Early Softballs
 Bradford Park, Field 1 — 17005 Davidson-Concord Rd. Huntersville, NC 28078
 Pool Play · game 8">W 13–4</button><button type="button" class="chip c-W" data-tip="Sun, Aug 23 · 11:30 AM
 Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs
 Crooked Creek Park, Field # 3 — 5900 Oakwood Lane Indian Trail, NC 28079
-Pool Play · game 5">W 8–4</button></td></tr><tr class=""><td class="num">15</td><td>Palmetto Reign<div class="muted small">Fort Mill, SC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−3.6<div class="muted small">#193</div></td><td class="num"><span class="wp" style="--p:83">83%</span></td><td class="num nowrap">8–4</td><td class="opt"></td></tr><tr class=""><td class="num">16</td><td>MP 10U Lady Bombers-Barrier<div class="muted small">Mount pleasant, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−5.0<div class="muted small">#206</div></td><td class="num"><span class="wp" style="--p:90">90%</span></td><td class="num nowrap">9–3</td><td class="opt"><button type="button" class="chip c-W" data-tip="Sat, Sep 19 · 12:45 PM
+Pool Play · game 5">W 8–4</button></span></span>
+          <span class="rval"><span class="wp" style="--p:77" title="Bombers' chance to win">77%</span><small class="nowrap">proj 8–4</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>15</b><small>pwr #193</small></span>
+          <span class="rmain"><b class="rn">Palmetto Reign</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Fort Mill, SC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:83" title="Bombers' chance to win">83%</span><small class="nowrap">proj 8–4</small></span>
+        </div><div class="rrow h-win">
+          <span class="rk"><b>16</b><small>pwr #206</small></span>
+          <span class="rmain"><b class="rn">MP 10U Lady Bombers-Barrier</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Mount pleasant, NC</span></span><span class="rchips"><button type="button" class="chip c-W" data-tip="Sat, Sep 19 · 12:45 PM
 Chelsea Parker Moneyball -$500.00 Cash or $1,000.00 to Future Events
 Bradford Park, Field 3 — 17005 Davidson-Concord Rd. Huntersville, NC 28078
-Pool Play · game 12">W 15–1</button></td></tr>
-      </tbody></table></div>
+Pool Play · game 12">W 15–1</button></span></span>
+          <span class="rval"><span class="wp" style="--p:90" title="Bombers' chance to win">90%</span><small class="nowrap">proj 9–3</small></span>
+        </div>
+      </div>
       
     </details>
       <div class="links"><a class="btn" href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12820" target="_blank" rel="noopener">Full schedule on Top Gun ↗</a></div>
@@ -383,36 +447,128 @@ Pool Play · game 12">W 15–1</button></td></tr>
       <span class="lt-chips"><span class="pill warn">Not confirmed</span><span class="pill">23 teams · we rate #11</span></span></div>
   </div>
   <details class="bigtable field-prev compact"><summary>See the field <span class="muted">· win chances vs all 23</span></summary>
-      <p class="small">The Bombers rate <b>#11 of 23</b> rated teams in this field and would be favored against <b>12</b> of the other 22. Win % and projected scores come from the power ratings; projected runs are rough (typically off by about 3 runs per team).</p>
-      <div class="scroll"><table><thead><tr><th class="num">#</th><th>Team</th><th>Class</th><th class="num opt">Rating</th><th class="num">Our win %</th><th class="num">Projected</th><th class="opt"></th></tr></thead><tbody>
-      <tr class=""><td class="num">1</td><td>Extreme Performance<div class="muted small">Salisbury, NC · not yet confirmed</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+5.5<div class="muted small">#17</div></td><td class="num"><span class="wp" style="--p:16">16%</span></td><td class="num nowrap">3–7</td><td class="opt"></td></tr><tr class=""><td class="num">2</td><td>SFA Stars<div class="muted small">Matthews, NC · not yet confirmed</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+4.0<div class="muted small">#36</div></td><td class="num"><span class="wp" style="--p:25">25%</span></td><td class="num nowrap">4–7</td><td class="opt"></td></tr><tr class=""><td class="num">3</td><td>Dirtbags Schroeder<div class="muted small">Hickory, NC · not yet confirmed</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+3.7<div class="muted small">#42</div></td><td class="num"><span class="wp" style="--p:27">27%</span></td><td class="num nowrap">3–6</td><td class="opt"></td></tr><tr class=""><td class="num">4</td><td>Team NC-Goodrum<div class="muted small">mooresville, NC</div></td><td><span class="cls cls-A">A</span></td><td class="num opt">+2.0<div class="muted small">#70</div></td><td class="num"><span class="wp" style="--p:41">41%</span></td><td class="num nowrap">5–6</td><td class="opt"></td></tr><tr class=""><td class="num">5</td><td>Lexington Flying Pigs Elite Young<div class="muted small">Lexington, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+1.9<div class="muted small">#73</div></td><td class="num"><span class="wp" style="--p:42">42%</span></td><td class="num nowrap">5–6</td><td class="opt"></td></tr><tr class=""><td class="num">6</td><td>Extreme Performance White<div class="muted small">Salisbury, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+1.7<div class="muted small">#75</div></td><td class="num"><span class="wp" style="--p:43">43%</span></td><td class="num nowrap">5–6</td><td class="opt"></td></tr><tr class=""><td class="num">7</td><td>Carolina Colts<div class="muted small">Locust, NC · not yet confirmed</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+1.4<div class="muted small">#80</div></td><td class="num"><span class="wp" style="--p:46">46%</span></td><td class="num nowrap">5–6</td><td class="opt"></td></tr><tr class=""><td class="num">8</td><td>10U ALAB SOFTBALL<div class="muted small">MAIDEN, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+1.3<div class="muted small">#83</div></td><td class="num"><span class="wp" style="--p:47">47%</span></td><td class="num nowrap">6–6</td><td class="opt"><button type="button" class="chip c-L" data-tip="Sat, Sep 19 · 5:30 PM
+      <p class="small">The Bombers rate <b>#11 of 23</b> rated teams in this field and would be favored against <b>12</b> of the other 22. Each row shows our win chance and projected score (us–them), from the power ratings; projected runs are rough (typically off by about 3 runs per team).</p>
+      <div class="rlist fp-list">
+      <div class="rrow ">
+          <span class="rk"><b>1</b><small>pwr #17</small></span>
+          <span class="rmain"><b class="rn">Extreme Performance</b><span class="rsub"><span class="cls cls-B">B</span><span>Salisbury, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:16" title="Bombers' chance to win">16%</span><small class="nowrap">proj 3–7</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>2</b><small>pwr #36</small></span>
+          <span class="rmain"><b class="rn">SFA Stars</b><span class="rsub"><span class="cls cls-B">B</span><span>Matthews, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:25" title="Bombers' chance to win">25%</span><small class="nowrap">proj 4–7</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>3</b><small>pwr #42</small></span>
+          <span class="rmain"><b class="rn">Dirtbags Schroeder</b><span class="rsub"><span class="cls cls-B">B</span><span>Hickory, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:27" title="Bombers' chance to win">27%</span><small class="nowrap">proj 3–6</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>4</b><small>pwr #70</small></span>
+          <span class="rmain"><b class="rn">Team NC-Goodrum</b><span class="rsub"><span class="cls cls-A">A</span><span>mooresville, NC</span></span></span>
+          <span class="rval"><span class="wp" style="--p:41" title="Bombers' chance to win">41%</span><small class="nowrap">proj 5–6</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>5</b><small>pwr #73</small></span>
+          <span class="rmain"><b class="rn">Lexington Flying Pigs Elite Young</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Lexington, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:42" title="Bombers' chance to win">42%</span><small class="nowrap">proj 5–6</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>6</b><small>pwr #75</small></span>
+          <span class="rmain"><b class="rn">Extreme Performance White</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Salisbury, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:43" title="Bombers' chance to win">43%</span><small class="nowrap">proj 5–6</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>7</b><small>pwr #80</small></span>
+          <span class="rmain"><b class="rn">Carolina Colts</b><span class="rsub"><span class="cls cls-B">B</span><span>Locust, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:46" title="Bombers' chance to win">46%</span><small class="nowrap">proj 5–6</small></span>
+        </div><div class="rrow h-loss">
+          <span class="rk"><b>8</b><small>pwr #83</small></span>
+          <span class="rmain"><b class="rn">10U ALAB SOFTBALL</b><span class="rsub"><span class="cls cls-BB">BB</span><span>MAIDEN, NC · not confirmed</span></span><span class="rchips"><button type="button" class="chip c-L" data-tip="Sat, Sep 19 · 5:30 PM
 Chelsea Parker Moneyball -$500.00 Cash or $1,000.00 to Future Events
 Bradford Park, Field 2 — 17005 Davidson-Concord Rd. Huntersville, NC 28078
 Silver bracket · Final (game 4)
 Seeds: us #6 vs 10U ALAB SOFTBALL #7
-Finished: us 2nd Silver · them 1st Silver">L 4–10</button></td></tr><tr class=""><td class="num">9</td><td>Carolina Wombats 10U- Gray<div class="muted small">Waxhaw, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+1.1<div class="muted small">#88</div></td><td class="num"><span class="wp" style="--p:48">48%</span></td><td class="num nowrap">5–6</td><td class="opt"></td></tr><tr class=""><td class="num">10</td><td>Boonies Fastpitch 10U<div class="muted small">Boone, NC</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+1.0<div class="muted small">#93</div></td><td class="num"><span class="wp" style="--p:49">49%</span></td><td class="num nowrap">5–5</td><td class="opt"></td></tr><tr class="us"><td class="num">11</td><td>Bombers Softball 10U Beck<div class="muted small">Rock Hill, SC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+0.9<div class="muted small">#95</div></td><td class="num"></td><td class="num nowrap"><span class="muted small">us</span></td><td class="opt"></td></tr><tr class=""><td class="num">12</td><td>Weddington Royals Knight<div class="muted small">Weddington, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−0.3<div class="muted small">#119</div></td><td class="num"><span class="wp" style="--p:60">60%</span></td><td class="num nowrap">6–5</td><td class="opt"><button type="button" class="chip c-L" data-tip="Sat, Sep 26 · 2:00 PM
+Finished: us 2nd Silver · them 1st Silver">L 4–10</button></span></span>
+          <span class="rval"><span class="wp" style="--p:47" title="Bombers' chance to win">47%</span><small class="nowrap">proj 6–6</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>9</b><small>pwr #88</small></span>
+          <span class="rmain"><b class="rn">Carolina Wombats 10U- Gray</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Waxhaw, NC</span></span></span>
+          <span class="rval"><span class="wp" style="--p:48" title="Bombers' chance to win">48%</span><small class="nowrap">proj 5–6</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>10</b><small>pwr #93</small></span>
+          <span class="rmain"><b class="rn">Boonies Fastpitch 10U</b><span class="rsub"><span class="cls cls-B">B</span><span>Boone, NC</span></span></span>
+          <span class="rval"><span class="wp" style="--p:49" title="Bombers' chance to win">49%</span><small class="nowrap">proj 5–5</small></span>
+        </div><div class="rrow us">
+          <span class="rk"><b>11</b><small>pwr #95</small></span>
+          <span class="rmain"><b class="rn">Bombers Softball 10U Beck</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Rock Hill, SC · not confirmed</span></span></span>
+          <span class="rval"><small>us</small></span>
+        </div><div class="rrow h-loss">
+          <span class="rk"><b>12</b><small>pwr #119</small></span>
+          <span class="rmain"><b class="rn">Weddington Royals Knight</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Weddington, NC</span></span><span class="rchips"><button type="button" class="chip c-L" data-tip="Sat, Sep 26 · 2:00 PM
 Dick&#39;s Fall State Backpack Championships-Winner Receive (12) Backpacks
 Rocky River Complex, Field 2 — 5454 Rocky River Rd. Concord, NC 28025
 Gold bracket · Semifinal (game 1)
 Seeds: us #4 vs Weddington Royals Knight #1
-Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></td></tr><tr class=""><td class="num">13</td><td>Mambas Vardo<div class="muted small">Mint Hill, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−0.9<div class="muted small">#133</div></td><td class="num"><span class="wp" style="--p:65">65%</span></td><td class="num nowrap">7–5</td><td class="opt"><button type="button" class="chip c-L" data-tip="Sat, Sep 12 · 3:00 PM
+Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></span></span>
+          <span class="rval"><span class="wp" style="--p:60" title="Bombers' chance to win">60%</span><small class="nowrap">proj 6–5</small></span>
+        </div><div class="rrow h-loss">
+          <span class="rk"><b>13</b><small>pwr #133</small></span>
+          <span class="rmain"><b class="rn">Mambas Vardo</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Mint Hill, NC · not confirmed</span></span><span class="rchips"><button type="button" class="chip c-L" data-tip="Sat, Sep 12 · 3:00 PM
 $1,000.00 Marucci Bats to Winner and Runner-Ups-Enter Early Softballs
 Bradford Park, Field 1 — 17005 Davidson-Concord Rd. Huntersville, NC 28078
 Gold bracket · Quarterfinal (game 1)
 Seeds: us #5 vs Mambas Vardo #4
-Finished: us 5th Gold · them still alive">L 7–8</button></td></tr><tr class=""><td class="num">14</td><td>Bandits NC-Orange<div class="muted small">Advance, NC · not yet confirmed</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">−1.3<div class="muted small">#142</div></td><td class="num"><span class="wp" style="--p:69">69%</span></td><td class="num nowrap">6–4</td><td class="opt"></td></tr><tr class=""><td class="num">15</td><td>Bandits NC - Black<div class="muted small">Advance, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−1.3<div class="muted small">#143</div></td><td class="num"><span class="wp" style="--p:69">69%</span></td><td class="num nowrap">6–4</td><td class="opt"></td></tr><tr class=""><td class="num">16</td><td>Knockouts Adams/Salyers<div class="muted small">Harrisburg, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−1.7<div class="muted small">#155</div></td><td class="num"><span class="wp" style="--p:71">71%</span></td><td class="num nowrap">7–5</td><td class="opt"></td></tr><tr class=""><td class="num">17</td><td>Carolina Force<div class="muted small">Concord, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−2.5<div class="muted small">#171</div></td><td class="num"><span class="wp" style="--p:77">77%</span></td><td class="num nowrap">8–4</td><td class="opt"><button type="button" class="chip c-W" data-tip="Sat, Sep 12 · 10:15 AM
+Finished: us 5th Gold · them still alive">L 7–8</button></span></span>
+          <span class="rval"><span class="wp" style="--p:65" title="Bombers' chance to win">65%</span><small class="nowrap">proj 7–5</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>14</b><small>pwr #142</small></span>
+          <span class="rmain"><b class="rn">Bandits NC-Orange</b><span class="rsub"><span class="cls cls-B">B</span><span>Advance, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:69" title="Bombers' chance to win">69%</span><small class="nowrap">proj 6–4</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>15</b><small>pwr #143</small></span>
+          <span class="rmain"><b class="rn">Bandits NC - Black</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Advance, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:69" title="Bombers' chance to win">69%</span><small class="nowrap">proj 6–4</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>16</b><small>pwr #155</small></span>
+          <span class="rmain"><b class="rn">Knockouts Adams/Salyers</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Harrisburg, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:71" title="Bombers' chance to win">71%</span><small class="nowrap">proj 7–5</small></span>
+        </div><div class="rrow h-win">
+          <span class="rk"><b>17</b><small>pwr #171</small></span>
+          <span class="rmain"><b class="rn">Carolina Force</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Concord, NC</span></span><span class="rchips"><button type="button" class="chip c-W" data-tip="Sat, Sep 12 · 10:15 AM
 $1,000.00 Marucci Bats to Winner and Runner-Ups-Enter Early Softballs
 Bradford Park, Field 1 — 17005 Davidson-Concord Rd. Huntersville, NC 28078
 Pool Play · game 8">W 13–4</button><button type="button" class="chip c-W" data-tip="Sun, Aug 23 · 11:30 AM
 Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs
 Crooked Creek Park, Field # 3 — 5900 Oakwood Lane Indian Trail, NC 28079
-Pool Play · game 5">W 8–4</button></td></tr><tr class=""><td class="num">18</td><td>On Deck O’s Hurt<div class="muted small">Charlotte, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−2.6<div class="muted small">#178</div></td><td class="num"><span class="wp" style="--p:78">78%</span></td><td class="num nowrap">8–4</td><td class="opt"><button type="button" class="chip c-W" data-tip="Sat, Sep 19 · 4:00 PM
+Pool Play · game 5">W 8–4</button></span></span>
+          <span class="rval"><span class="wp" style="--p:77" title="Bombers' chance to win">77%</span><small class="nowrap">proj 8–4</small></span>
+        </div><div class="rrow h-win">
+          <span class="rk"><b>18</b><small>pwr #178</small></span>
+          <span class="rmain"><b class="rn">On Deck O’s Hurt</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Charlotte, NC · not confirmed</span></span><span class="rchips"><button type="button" class="chip c-W" data-tip="Sat, Sep 19 · 4:00 PM
 Chelsea Parker Moneyball -$500.00 Cash or $1,000.00 to Future Events
 Bradford Park, Field 2 — 17005 Davidson-Concord Rd. Huntersville, NC 28078
 Silver bracket · Semifinal (game 3)
 Seeds: us #6 vs On Deck O’s Hurt #10
-Finished: us 2nd Silver · them 3rd Silver">W 14–1</button></td></tr><tr class=""><td class="num">19</td><td>NC Phantoms Fastpitch 10u<div class="muted small">Morganton, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−2.9<div class="muted small">#184</div></td><td class="num"><span class="wp" style="--p:80">80%</span></td><td class="num nowrap">8–4</td><td class="opt"></td></tr><tr class=""><td class="num">20</td><td>CPR Sirens Orange<div class="muted small">Forest City, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−4.8</td><td class="num"><span class="wp" style="--p:89">89%</span></td><td class="num nowrap">8–3</td><td class="opt"></td></tr><tr class=""><td class="num">21</td><td>Carolina Angels- Sullivan<div class="muted small">Winston Salem, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−5.6<div class="muted small">#212</div></td><td class="num"><span class="wp" style="--p:92">92%</span></td><td class="num nowrap">10–3</td><td class="opt"></td></tr><tr class=""><td class="num">22</td><td>Uwharrie Fever 10u<div class="muted small">Star, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−5.8<div class="muted small">#213</div></td><td class="num"><span class="wp" style="--p:93">93%</span></td><td class="num nowrap">10–3</td><td class="opt"></td></tr><tr class=""><td class="num">23</td><td>Carolina Smoke Teal<div class="muted small">Concord, NC · not yet confirmed</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−6.5<div class="muted small">#214</div></td><td class="num"><span class="wp" style="--p:95">95%</span></td><td class="num nowrap">10–2</td><td class="opt"></td></tr>
-      </tbody></table></div>
+Finished: us 2nd Silver · them 3rd Silver">W 14–1</button></span></span>
+          <span class="rval"><span class="wp" style="--p:78" title="Bombers' chance to win">78%</span><small class="nowrap">proj 8–4</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>19</b><small>pwr #184</small></span>
+          <span class="rmain"><b class="rn">NC Phantoms Fastpitch 10u</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Morganton, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:80" title="Bombers' chance to win">80%</span><small class="nowrap">proj 8–4</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>20</b></span>
+          <span class="rmain"><b class="rn">CPR Sirens Orange</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Forest City, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:89" title="Bombers' chance to win">89%</span><small class="nowrap">proj 8–3</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>21</b><small>pwr #212</small></span>
+          <span class="rmain"><b class="rn">Carolina Angels- Sullivan</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Winston Salem, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:92" title="Bombers' chance to win">92%</span><small class="nowrap">proj 10–3</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>22</b><small>pwr #213</small></span>
+          <span class="rmain"><b class="rn">Uwharrie Fever 10u</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Star, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:93" title="Bombers' chance to win">93%</span><small class="nowrap">proj 10–3</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>23</b><small>pwr #214</small></span>
+          <span class="rmain"><b class="rn">Carolina Smoke Teal</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Concord, NC · not confirmed</span></span></span>
+          <span class="rval"><span class="wp" style="--p:95" title="Bombers' chance to win">95%</span><small class="nowrap">proj 10–2</small></span>
+        </div>
+      </div>
       
     </details>
 </div><div class="card later-card">
@@ -423,20 +579,44 @@ Finished: us 2nd Silver · them 3rd Silver">W 14–1</button></td></tr><tr class
       <span class="lt-chips"><span class="pill ok">Confirmed</span><span class="pill">7 teams · we rate #4</span></span></div>
   </div>
   <details class="bigtable field-prev compact"><summary>See the field <span class="muted">· win chances vs all 7</span></summary>
-      <p class="small">The Bombers rate <b>#4 of 6</b> rated teams in this field and would be favored against <b>2</b> of the other 5. Win % and projected scores come from the power ratings; projected runs are rough (typically off by about 3 runs per team).</p>
-      <div class="scroll"><table><thead><tr><th class="num">#</th><th>Team</th><th>Class</th><th class="num opt">Rating</th><th class="num">Our win %</th><th class="num">Projected</th><th class="opt"></th></tr></thead><tbody>
-      <tr class=""><td class="num">1</td><td>TN Mojo 2034-35 Shaw/Parker<div class="muted small">Troutman, NC</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+5.5<div class="muted small">#16</div></td><td class="num"><span class="wp" style="--p:16">16%</span></td><td class="num nowrap">3–8</td><td class="opt"></td></tr><tr class=""><td class="num">2</td><td>Team North Carolina Tejeda<div class="muted small">Waxhaw, NC</div></td><td><span class="cls cls-B">B</span></td><td class="num opt">+5.0<div class="muted small">#21</div></td><td class="num"><span class="wp" style="--p:19">19%</span></td><td class="num nowrap">3–7</td><td class="opt"><button type="button" class="chip c-L" data-tip="Sun, Aug 23 · 4:00 PM
+      <p class="small">The Bombers rate <b>#4 of 6</b> rated teams in this field and would be favored against <b>2</b> of the other 5. Each row shows our win chance and projected score (us–them), from the power ratings; projected runs are rough (typically off by about 3 runs per team).</p>
+      <div class="rlist fp-list">
+      <div class="rrow ">
+          <span class="rk"><b>1</b><small>pwr #16</small></span>
+          <span class="rmain"><b class="rn">TN Mojo 2034-35 Shaw/Parker</b><span class="rsub"><span class="cls cls-B">B</span><span>Troutman, NC</span></span></span>
+          <span class="rval"><span class="wp" style="--p:16" title="Bombers' chance to win">16%</span><small class="nowrap">proj 3–8</small></span>
+        </div><div class="rrow h-loss">
+          <span class="rk"><b>2</b><small>pwr #21</small></span>
+          <span class="rmain"><b class="rn">Team North Carolina Tejeda</b><span class="rsub"><span class="cls cls-B">B</span><span>Waxhaw, NC</span></span><span class="rchips"><button type="button" class="chip c-L" data-tip="Sun, Aug 23 · 4:00 PM
 Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs
 Crooked Creek Park, Field # 4 — 5900 Oakwood Lane Indian Trail, NC 28079
 Gold bracket · Semifinal (game 2)
 Seeds: us #2 vs Team North Carolina Tejeda #3
-Finished: us 3rd Gold · them 1st Gold">L 3–8</button></td></tr><tr class=""><td class="num">3</td><td>Carolina Wombats 10U- Gray<div class="muted small">Waxhaw, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+1.1<div class="muted small">#88</div></td><td class="num"><span class="wp" style="--p:48">48%</span></td><td class="num nowrap">5–6</td><td class="opt"></td></tr><tr class="us"><td class="num">4</td><td>Bombers Softball 10U Beck<div class="muted small">Rock Hill, SC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">+0.9<div class="muted small">#95</div></td><td class="num"></td><td class="num nowrap"><span class="muted small">us</span></td><td class="opt"></td></tr><tr class=""><td class="num">5</td><td>Weddington Royals Knight<div class="muted small">Weddington, NC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−0.3<div class="muted small">#119</div></td><td class="num"><span class="wp" style="--p:60">60%</span></td><td class="num nowrap">6–5</td><td class="opt"><button type="button" class="chip c-L" data-tip="Sat, Sep 26 · 2:00 PM
+Finished: us 3rd Gold · them 1st Gold">L 3–8</button></span></span>
+          <span class="rval"><span class="wp" style="--p:19" title="Bombers' chance to win">19%</span><small class="nowrap">proj 3–7</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>3</b><small>pwr #88</small></span>
+          <span class="rmain"><b class="rn">Carolina Wombats 10U- Gray</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Waxhaw, NC</span></span></span>
+          <span class="rval"><span class="wp" style="--p:48" title="Bombers' chance to win">48%</span><small class="nowrap">proj 5–6</small></span>
+        </div><div class="rrow us">
+          <span class="rk"><b>4</b><small>pwr #95</small></span>
+          <span class="rmain"><b class="rn">Bombers Softball 10U Beck</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Rock Hill, SC</span></span></span>
+          <span class="rval"><small>us</small></span>
+        </div><div class="rrow h-loss">
+          <span class="rk"><b>5</b><small>pwr #119</small></span>
+          <span class="rmain"><b class="rn">Weddington Royals Knight</b><span class="rsub"><span class="cls cls-BB">BB</span><span>Weddington, NC</span></span><span class="rchips"><button type="button" class="chip c-L" data-tip="Sat, Sep 26 · 2:00 PM
 Dick&#39;s Fall State Backpack Championships-Winner Receive (12) Backpacks
 Rocky River Complex, Field 2 — 5454 Rocky River Rd. Concord, NC 28025
 Gold bracket · Semifinal (game 1)
 Seeds: us #4 vs Weddington Royals Knight #1
-Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></td></tr><tr class=""><td class="num">6</td><td>Palmetto Heat 10U Whisenant<div class="muted small">York, SC</div></td><td><span class="cls cls-BB">BB</span></td><td class="num opt">−1.1<div class="muted small">#137</div></td><td class="num"><span class="wp" style="--p:66">66%</span></td><td class="num nowrap">7–5</td><td class="opt"></td></tr>
-      </tbody></table></div>
+Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></span></span>
+          <span class="rval"><span class="wp" style="--p:60" title="Bombers' chance to win">60%</span><small class="nowrap">proj 6–5</small></span>
+        </div><div class="rrow ">
+          <span class="rk"><b>6</b><small>pwr #137</small></span>
+          <span class="rmain"><b class="rn">Palmetto Heat 10U Whisenant</b><span class="rsub"><span class="cls cls-BB">BB</span><span>York, SC</span></span></span>
+          <span class="rval"><span class="wp" style="--p:66" title="Bombers' chance to win">66%</span><small class="nowrap">proj 7–5</small></span>
+        </div>
+      </div>
       <p class="small muted">No rating yet (no Top Gun 10U games since Aug 1): Carolina Freedom.</p>
     </details>
 </div>
@@ -739,7 +919,7 @@ Finished: us 5th Gold · them still alive">L 7–8</button> vs Mambas Vardo <spa
 </details>
 <details class="bigtable" open><summary>Full power rankings <span class="muted">· 218 teams · filter by class, state, or teams we've played</span></summary>
 <div class="filters">
-  <div class="seg" role="group" aria-label="Which teams"><button data-pscope="near" aria-pressed="true">Near us</button><button data-pscope="all" aria-pressed="false">All</button><button data-pscope="played" aria-pressed="false">Played</button></div>
+  <div class="seg" role="group" aria-label="Which teams"><button data-pscope="near" aria-pressed="true">Similar rank</button><button data-pscope="all" aria-pressed="false">All</button><button data-pscope="played" aria-pressed="false">Played</button></div>
   <div class="seg" role="group" aria-label="Class"><button data-pcls="A" aria-pressed="true">A</button><button data-pcls="AA" aria-pressed="true">AA</button><button data-pcls="B" aria-pressed="true">B</button><button data-pcls="BB" aria-pressed="true">BB</button></div>
   <select id="pstate" aria-label="State"><option value="">All states</option><option>GA</option><option>NC</option><option>SC</option><option>TN</option><option>VA</option></select>
   <label class="small"><input type="checkbox" id="pprov"> Include teams with &lt; 4 games</label>
@@ -1859,7 +2039,7 @@ Pool Play · game 12">W 15–1</button></span></span>
 <div class="legend small"><span><i class="sw h-win"></i>Beat every time</span><span><i class="sw h-mixed"></i>Split / won at least once</span><span><i class="sw h-loss"></i>Lost every time</span><span><i class="sw h-tie"></i>Tied</span></div>
 <details class="bigtable" open><summary>Full points standings <span class="muted">· 268 teams across SC + NC, with our head-to-head results</span></summary>
 <div class="tabs" role="tablist"><button role="tab" data-tab="0" aria-selected="true">All states<span>268 teams · played 12</span></button><button role="tab" data-tab="1" aria-selected="false">SC<span>93 teams · played 2</span></button><button role="tab" data-tab="2" aria-selected="false">NC<span>175 teams · played 10</span></button></div>
-<div class="filters"><div class="seg" role="group" aria-label="Which teams to show"><button data-filter="near" aria-pressed="true">Near us</button><button data-filter="all" aria-pressed="false">All</button><button data-filter="played" aria-pressed="false">Played</button></div><span class="small muted" id="showing"></span></div>
+<div class="filters"><div class="seg" role="group" aria-label="Which teams to show"><button data-filter="near" aria-pressed="true">Similar rank</button><button data-filter="all" aria-pressed="false">All</button><button data-filter="played" aria-pressed="false">Played</button></div><span class="small muted" id="showing"></span></div>
 <div id="pointsLists" class="near-only"><div class="scroll plist" data-panel="0">
 <p class="small muted">Top Gun ranks teams only within their home state. This view merges the SC + NC lists and ranks everyone by points; the small "SC #" under each rank is that team's rank in its own state.</p>
 <div class="rlist"><div class="rlegend"><span>#</span><span>Team · class</span><span>Points</span></div><div class="rrow  unplayed">
@@ -4115,7 +4295,7 @@ Finished: us 3rd Gold · them 1st Gold">L 3–8</button></span></span>
 </section>
 
 
-<footer>Updated Mon, Sep 28, 8:42 AM ET from
+<footer>Updated Mon, Sep 28, 9:03 AM ET from
 <a href="https://playtopgunsports.com/TeamPage/EntryPoint.aspx?p2=36582" target="_blank" rel="noopener">playtopgunsports.com</a> and topgunstats.com.<br>Checked automatically — daily, and hourly around tournaments. Team members: <a href="team/">full page with player stats</a>.</footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
@@ -4157,7 +4337,7 @@ function showing() {
   const panel = document.querySelector('[data-panel]:not([hidden])'), out = document.getElementById('showing');
   if (!panel || !out) return;
   const all = panel.querySelectorAll('.rrow:not(.ghost)').length, played = panel.querySelectorAll('.rrow:not(.ghost):not(.unplayed)').length, near = panel.querySelectorAll('.rrow.near:not(.ghost)').length;
-  out.textContent = 'Showing ' + (lists.classList.contains('filtered') ? played : lists.classList.contains('near-only') ? near : all) + ' of ' + all;
+  out.textContent = lists.classList.contains('near-only') ? 'The ' + near + ' teams closest to us in points · of ' + all : 'Showing ' + (lists.classList.contains('filtered') ? played : all) + ' of ' + all;
 }
 document.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('[data-filter]').forEach(x => x.setAttribute('aria-pressed', x === b));
@@ -4203,7 +4383,7 @@ function applyPower() {
       && (!c || pf.cls.has(c)) && (!pf.st || d.st === pf.st) && (pf.prov || !r.classList.contains('prov')));
     r.hidden = !ok; total++; if (ok) shown++;
   });
-  document.getElementById('pshowing').textContent = 'Showing ' + shown + ' of ' + total;
+  document.getElementById('pshowing').textContent = pf.scope === 'near' ? 'The ' + shown + ' teams ranked closest to us · of ' + total : 'Showing ' + shown + ' of ' + total;
 }
 document.querySelectorAll('[data-pscope]').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('[data-pscope]').forEach(x => x.setAttribute('aria-pressed', x === b)); pf.scope = b.dataset.pscope; applyPower();
