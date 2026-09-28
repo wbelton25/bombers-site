@@ -201,6 +201,16 @@ header.top{position:sticky;top:0;z-index:20;padding:calc(env(safe-area-inset-top
 .store-ic{flex-shrink:0;width:46px;height:46px;border-radius:50%;background:#fff;color:#027941;display:grid;place-items:center}.store-ic svg{width:24px;height:24px}
 .store-txt{flex:1;min-width:0}.store-k{display:block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.85}.store-txt b{display:block;font-size:1.08rem;line-height:1.25}.store-txt small{display:block;font-size:.8rem;opacity:.9}
 .store-go{flex-shrink:0;padding:8px 14px;border-radius:99px;background:#fff;color:var(--navy);font-weight:800;font-size:.88rem;position:relative;z-index:1}
+.ts-cal .ts-row{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}.ts-cal .later-h+.ts-row{border-top:0}
+.ts-body{display:flex;flex-direction:column;gap:2px;min-width:0}.ts-title{font-size:1rem}.ts-when{font-size:.86rem;font-variant-numeric:tabular-nums}
+.ts-place{font-size:.84rem;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}.ts-place small{display:block;color:var(--muted);font-size:.76rem;text-decoration:none}
+.ts-row.canceled .ts-title,.ts-row.canceled .ts-when{text-decoration:line-through;text-decoration-color:var(--loss)}.ts-row.canceled .ts-title .pill{text-decoration:none;display:inline-block}.ts-row.canceled{opacity:.75}
+.ts-row.k-tournament .datetile span{background:var(--green)}.ts-row.k-scrimmage .datetile span{background:#6b4fa0}
+.ts-jobs{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 0}.pill.snack{background:color-mix(in srgb,var(--green) 14%,var(--card));color:var(--ink);border:1px solid color-mix(in srgb,var(--green) 35%,transparent)}
+.ts-month{margin:14px 0 2px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.ts-cal .ts-month+.ts-row{border-top:0}.ts-link{font-size:.84rem;font-weight:600;color:var(--hi);margin-top:4px}
+.ts-more summary{padding:8px 0;font-weight:600;color:var(--hi);cursor:pointer}
+.np-card{display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);border-left:4px solid var(--green)}.np-t{font-size:1.1rem}.np-off{font-size:.86rem;margin-top:4px}.np-more{margin-top:4px}
+.logout-row{text-align:center;margin:22px 0 6px}.logout{font:inherit;font-size:.85rem;color:var(--muted);background:none;border:1px solid var(--line);border-radius:99px;padding:6px 14px;cursor:pointer}
 .lockcard{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink)}.lockcard>svg{width:22px;height:22px;flex-shrink:0;color:var(--brand)}
 /* results list */
 .season-list li a{display:grid;grid-template-columns:48px 1fr auto auto;gap:8px;align-items:center;padding:11px 2px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
@@ -328,6 +338,7 @@ details.fold{padding:12px 14px}details.fold>summary{cursor:pointer}details.fold[
 
 <section class="view" data-view="schedule" id="v-schedule" hidden>
 <h2 class="view-title">Schedule</h2>
+
 <div id="now"><section class="card event">
       <div class="kicker">Next up</div>
       <h2 title="BIG PINK OUT WEEKEND-----BIG PINK CHAINS, PINK BAG TAGS, PINK PRIZES">Big Pink Out Weekend</h2><p class="small muted fullname">Big Pink Out Weekend · Big Pink Chains, Pink Bag Tags, Pink Prizes</p>
@@ -436,7 +447,7 @@ Pool Play · game 12">W 15–1</button></span></span>
       <div class="links"><a class="btn" href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12820" target="_blank" rel="noopener">Full schedule on Top Gun ↗</a></div>
       <details class="note"><summary>Tournament notes <span class="muted small">from the director · updated Jul 30</span></summary>
       <ul class="rich"><li>Pink Out Weekend</li><li>Come dressed in pink during cancer awareness month</li><li>Top Gun Biggest Pink Chains This Weekend</li><li>Pink Bag Tags</li><li>Pink Custom Made Jumbo Rings</li></ul></details>
-      <details><summary>Fields & directions</summary><ul class="plain"><li><a href="https://www.google.com/maps/search/?api=1&amp;query=17005%20Davidson-Concord%20Rd.%20Huntersville%2C%20NC%2028078" target="_blank" rel="noopener">Bradford Park</a><div class="muted small">17005 Davidson-Concord Rd. Huntersville, NC 28078</div></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=5900%20Oakwood%20Lane%20Indian%20Trail%2C%20NC%2028079" target="_blank" rel="noopener">Crooked Creek Park</a><div class="muted small">5900 Oakwood Lane Indian Trail, NC 28079</div></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=6000%20Statesville%20Rd.%20Charlotte%2C%20NC%2028269" target="_blank" rel="noopener">Nevins Park</a><div class="muted small">6000 Statesville Rd. Charlotte, NC 28269</div></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=5454%20Rocky%20River%20Rd.%20Concord%2C%20NC%2028025" target="_blank" rel="noopener">Rocky River Complex</a><div class="muted small">5454 Rocky River Rd. Concord, NC 28025</div></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=935%20Hurley%20School%20Rd.%20Salisbury%2C%20NC%2028147" target="_blank" rel="noopener">Salisbury Community Park</a><div class="muted small">935 Hurley School Rd. Salisbury, NC 28147</div></li></ul></details>
+      <details><summary>Fields & directions</summary><ul class="plain"><li><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener">Bradford Park</a><div class="muted small">17005 Davidson-Concord Rd. Huntersville, NC 28078</div></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener">Crooked Creek Park</a><div class="muted small">5900 Oakwood Lane Indian Trail, NC 28079</div></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener">Nevins Park</a><div class="muted small">6000 Statesville Rd. Charlotte, NC 28269</div></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener">Rocky River Complex</a><div class="muted small">5454 Rocky River Rd. Concord, NC 28025</div></li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener">Salisbury Community Park</a><div class="muted small">935 Hurley School Rd. Salisbury, NC 28147</div></li></ul></details>
       <div class="director"><b>Robin Phillips</b> <span class="muted">Tournament Director</span><br>
       <a href="tel:7047864754">704-786-4754</a> · <a href="mailto:robin@playtopgunsports.com">robin@playtopgunsports.com</a></div>
     </section></div>
@@ -625,6 +636,7 @@ Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></span></span>
 </div>
 <p class="small muted">Checked every Top Gun softball tournament through Mar 27, 2027.</p>
 </section>
+
 </section>
 
 <section class="view" data-view="results" id="v-results" hidden>
@@ -646,7 +658,7 @@ Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></span></span>
         <div class="when"><b>Sat</b><span>8:30 AM</span></div>
         <div class="what">
           <div class="opp">vs Carolina Lightning 10U Pink</div>
-          <div class="meta">Pool Play · Game 1<br><a href="https://www.google.com/maps/search/?api=1&amp;query=5454%20Rocky%20River%20Rd.%20Concord%2C%20NC%2028025" target="_blank" rel="noopener" title="5454 Rocky River Rd. Concord, NC 28025">Rocky River Complex</a><span class="muted"> · Field 2</span></div>
+          <div class="meta">Pool Play · Game 1<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="5454 Rocky River Rd. Concord, NC 28025">Rocky River Complex</a><span class="muted"> · Field 2</span></div>
         </div>
         <div class="score"><span class="badge">W</span><b>6–2</b></div>
         
@@ -655,7 +667,7 @@ Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></span></span>
         <div class="when"><b>Sat</b><span>11:00 AM</span></div>
         <div class="what">
           <div class="opp">vs Carolina Angels Hustedt</div>
-          <div class="meta">Pool Play · Game 11<br><a href="https://www.google.com/maps/search/?api=1&amp;query=5454%20Rocky%20River%20Rd.%20Concord%2C%20NC%2028025" target="_blank" rel="noopener" title="5454 Rocky River Rd. Concord, NC 28025">Rocky River Complex</a><span class="muted"> · Field 2</span></div>
+          <div class="meta">Pool Play · Game 11<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="5454 Rocky River Rd. Concord, NC 28025">Rocky River Complex</a><span class="muted"> · Field 2</span></div>
         </div>
         <div class="score"><span class="badge">W</span><b>7–6</b></div>
         
@@ -664,7 +676,7 @@ Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></span></span>
         <div class="when"><b>Sat</b><span>2:00 PM</span></div>
         <div class="what">
           <div class="opp">vs Weddington Royals Knight</div>
-          <div class="meta">Gold Bracket · Game 1 · we are Seed #4<br><a href="https://www.google.com/maps/search/?api=1&amp;query=5454%20Rocky%20River%20Rd.%20Concord%2C%20NC%2028025" target="_blank" rel="noopener" title="5454 Rocky River Rd. Concord, NC 28025">Rocky River Complex</a><span class="muted"> · Field 2</span></div>
+          <div class="meta">Gold Bracket · Game 1 · we are Seed #4<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="5454 Rocky River Rd. Concord, NC 28025">Rocky River Complex</a><span class="muted"> · Field 2</span></div>
         </div>
         <div class="score"><span class="badge">L</span><b>2–5</b></div>
         
@@ -704,7 +716,7 @@ Pool Play · game 1">W 6–2</button></td></tr><tr class=""><td class="nowrap"><
         <div class="when"><b>Sat</b><span>10:15 AM</span></div>
         <div class="what">
           <div class="opp">vs ALab 10u Reynolds/Hewitt</div>
-          <div class="meta">Pool Play · Game 6<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17005%20Davidson-Concord%20Rd.%20Huntersville%2C%20NC%2028078" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 3</span></div>
+          <div class="meta">Pool Play · Game 6<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 3</span></div>
         </div>
         <div class="score"><span class="badge">L</span><b>3–4</b></div>
         
@@ -713,7 +725,7 @@ Pool Play · game 1">W 6–2</button></td></tr><tr class=""><td class="nowrap"><
         <div class="when"><b>Sat</b><span>12:45 PM</span></div>
         <div class="what">
           <div class="opp">vs MP 10U Lady Bombers-Barrier</div>
-          <div class="meta">Pool Play · Game 12<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17005%20Davidson-Concord%20Rd.%20Huntersville%2C%20NC%2028078" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 3</span></div>
+          <div class="meta">Pool Play · Game 12<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 3</span></div>
         </div>
         <div class="score"><span class="badge">W</span><b>15–1</b></div>
         
@@ -722,7 +734,7 @@ Pool Play · game 1">W 6–2</button></td></tr><tr class=""><td class="nowrap"><
         <div class="when"><b>Sat</b><span>4:00 PM</span></div>
         <div class="what">
           <div class="opp">vs On Deck O’s Hurt</div>
-          <div class="meta">Silver Bracket · Game 3 · we are Seed #6<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17005%20Davidson-Concord%20Rd.%20Huntersville%2C%20NC%2028078" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 2</span></div>
+          <div class="meta">Silver Bracket · Game 3 · we are Seed #6<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 2</span></div>
         </div>
         <div class="score"><span class="badge">W</span><b>14–1</b></div>
         
@@ -731,7 +743,7 @@ Pool Play · game 1">W 6–2</button></td></tr><tr class=""><td class="nowrap"><
         <div class="when"><b>Sat</b><span>5:30 PM</span></div>
         <div class="what">
           <div class="opp">vs 10U ALAB SOFTBALL</div>
-          <div class="meta">Silver Bracket · Game 4<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17005%20Davidson-Concord%20Rd.%20Huntersville%2C%20NC%2028078" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 2</span></div>
+          <div class="meta">Silver Bracket · Game 4<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 2</span></div>
         </div>
         <div class="score"><span class="badge">L</span><b>4–10</b></div>
         
@@ -774,7 +786,7 @@ Pool Play · game 12">W 15–1</button></td></tr><tr class=""><td class="nowrap"
         <div class="when"><b>Sat</b><span>10:15 AM</span></div>
         <div class="what">
           <div class="opp">vs Carolina Force</div>
-          <div class="meta">Pool Play · Game 8<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17005%20Davidson-Concord%20Rd.%20Huntersville%2C%20NC%2028078" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 1</span></div>
+          <div class="meta">Pool Play · Game 8<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 1</span></div>
         </div>
         <div class="score"><span class="badge">W</span><b>13–4</b></div>
         
@@ -783,7 +795,7 @@ Pool Play · game 12">W 15–1</button></td></tr><tr class=""><td class="nowrap"
         <div class="when"><b>Sat</b><span>11:30 AM</span></div>
         <div class="what">
           <div class="opp">vs Carolina Lightning 10U Purple</div>
-          <div class="meta">Pool Play · Game 13<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17005%20Davidson-Concord%20Rd.%20Huntersville%2C%20NC%2028078" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 1</span></div>
+          <div class="meta">Pool Play · Game 13<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 1</span></div>
         </div>
         <div class="score"><span class="badge">W</span><b>11–4</b></div>
         
@@ -792,7 +804,7 @@ Pool Play · game 12">W 15–1</button></td></tr><tr class=""><td class="nowrap"
         <div class="when"><b>Sat</b><span>3:00 PM</span></div>
         <div class="what">
           <div class="opp">vs Mambas Vardo</div>
-          <div class="meta">Gold Bracket · Game 1 · we are Seed #5<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17005%20Davidson-Concord%20Rd.%20Huntersville%2C%20NC%2028078" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 1</span></div>
+          <div class="meta">Gold Bracket · Game 1 · we are Seed #5<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="17005 Davidson-Concord Rd. Huntersville, NC 28078">Bradford Park</a><span class="muted"> · Field 1</span></div>
         </div>
         <div class="score"><span class="badge">L</span><b>7–8</b></div>
         
@@ -830,7 +842,7 @@ Pool Play · game 8">W 13–4</button></td></tr><tr class=""><td class="nowrap">
         <div class="when"><b>Sun</b><span>9:00 AM</span></div>
         <div class="what">
           <div class="opp">vs Lady Smoke 10U</div>
-          <div class="meta">Pool Play · Game 1<br><a href="https://www.google.com/maps/search/?api=1&amp;query=5900%20Oakwood%20Lane%20Indian%20Trail%2C%20NC%2028079" target="_blank" rel="noopener" title="5900 Oakwood Lane Indian Trail, NC 28079">Crooked Creek Park</a><span class="muted"> · Field # 3</span></div>
+          <div class="meta">Pool Play · Game 1<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="5900 Oakwood Lane Indian Trail, NC 28079">Crooked Creek Park</a><span class="muted"> · Field # 3</span></div>
         </div>
         <div class="score"><span class="badge">T</span><b>4–4</b></div>
         
@@ -839,7 +851,7 @@ Pool Play · game 8">W 13–4</button></td></tr><tr class=""><td class="nowrap">
         <div class="when"><b>Sun</b><span>11:30 AM</span></div>
         <div class="what">
           <div class="opp">vs Carolina Force</div>
-          <div class="meta">Pool Play · Game 5<br><a href="https://www.google.com/maps/search/?api=1&amp;query=5900%20Oakwood%20Lane%20Indian%20Trail%2C%20NC%2028079" target="_blank" rel="noopener" title="5900 Oakwood Lane Indian Trail, NC 28079">Crooked Creek Park</a><span class="muted"> · Field # 3</span></div>
+          <div class="meta">Pool Play · Game 5<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="5900 Oakwood Lane Indian Trail, NC 28079">Crooked Creek Park</a><span class="muted"> · Field # 3</span></div>
         </div>
         <div class="score"><span class="badge">W</span><b>8–4</b></div>
         
@@ -848,7 +860,7 @@ Pool Play · game 8">W 13–4</button></td></tr><tr class=""><td class="nowrap">
         <div class="when"><b>Sun</b><span>4:00 PM</span></div>
         <div class="what">
           <div class="opp">vs Team North Carolina Tejeda</div>
-          <div class="meta">Gold Bracket · Game 2 · we are Seed #2<br><a href="https://www.google.com/maps/search/?api=1&amp;query=5900%20Oakwood%20Lane%20Indian%20Trail%2C%20NC%2028079" target="_blank" rel="noopener" title="5900 Oakwood Lane Indian Trail, NC 28079">Crooked Creek Park</a><span class="muted"> · Field # 4</span></div>
+          <div class="meta">Gold Bracket · Game 2 · we are Seed #2<br><a href="https://www.google.com/maps/search/?api=1&amp;query=undefined" target="_blank" rel="noopener" title="5900 Oakwood Lane Indian Trail, NC 28079">Crooked Creek Park</a><span class="muted"> · Field # 4</span></div>
         </div>
         <div class="score"><span class="badge">L</span><b>3–8</b></div>
         
@@ -882,6 +894,7 @@ Pool Play · game 5">W 8–4</button></td></tr>
 <h2 class="view-title">Players</h2>
 <a class="card lockcard" href="team/"><svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 1a3.5 3.5 0 0 0-3.5 3.5V7H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-.5V4.5A3.5 3.5 0 0 0 8 1zm2 6H6V4.5a2 2 0 1 1 4 0V7z"/></svg><span><b>Player stats are on the team page</b><br><span class="muted small">Hitting, pitching, fielding and game-by-game trends. Team password required.</span></span></a><section class="card" id="team"><h3>Roster <span class="muted small">12 players</span></h3>
 <p class="small">Player names and stats are on the <a href="team/">team page</a> (team password required).</p><h3 class="sub-h">Coaches &amp; staff</h3><div class="coach-grid"><div class="coach"><span class="avatar">CB</span><span><b>Chad Beck</b><small>Head Coach</small></span></div><div class="coach"><span class="avatar">TB</span><span><b>Tyler Bowers</b><small>Assistant Coach</small></span></div><div class="coach"><span class="avatar">BP</span><span><b>Brittany Prunty</b><small>Team Administrator</small></span></div></div></section>
+
 </section>
 <section class="view" data-view="rankings" id="v-rankings" hidden>
 <h2 class="view-title">Rankings</h2>
@@ -4298,7 +4311,7 @@ Finished: us 3rd Gold · them 1st Gold">L 3–8</button></span></span>
 </section>
 
 
-<footer>Updated Mon, Sep 28, 9:59 AM ET from
+<footer>Updated Mon, Sep 28, 10:25 AM ET from
 <a href="https://playtopgunsports.com/TeamPage/EntryPoint.aspx?p2=36582" target="_blank" rel="noopener">playtopgunsports.com</a> and topgunstats.com.<br>Checked automatically — daily, and hourly around tournaments. Team members: <a href="team/">full page with player stats</a>.</footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
@@ -4318,6 +4331,8 @@ function showView(v) {
   document.querySelectorAll('[data-view-link]').forEach(a => { if (a.dataset.viewLink === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   current = v;
 }
+// Team page: forget the saved password and go back to the password screen.
+document.querySelectorAll('[data-logout]').forEach(b => b.addEventListener('click', () => { try { localStorage.removeItem('bombers-team-pw'); } catch (e) {} location.replace(location.pathname); }));
 function route() {
   const h = decodeURIComponent(location.hash.slice(1));
   if (!h || VIEWS.includes(h)) { const v = h || 'home', back = scrollPos[v]; showView(v); scrollTo(0, back || 0); return; }
