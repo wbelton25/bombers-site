@@ -204,6 +204,15 @@ header.top{position:sticky;top:0;z-index:20;padding:calc(env(safe-area-inset-top
 .lt-info{display:flex;flex-direction:column;gap:2px;min-width:0}.lt-info a{color:var(--ink);text-decoration:none}.lt-info a b{font-size:1rem}
 .lt-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}.lt-chips .pill{margin:0}
 .field-prev.compact{margin-top:10px;padding:4px 10px}.field-prev.compact>summary{font-size:.88rem;padding:6px 0}
+/* results: season summary, latest open, earlier compact */
+.season-sum{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;margin-top:12px}.season-sum .tile b{font-size:1.2rem}
+.mini-discs{display:flex;flex-wrap:wrap;gap:8px;text-transform:none !important;letter-spacing:0 !important;color:var(--ink) !important;font-size:.78rem !important;margin-bottom:2px}.mini{display:inline-flex;align-items:center;gap:4px}
+.disc.sm{width:22px;height:22px;border-width:2px;font-size:.72rem;font-style:normal;margin:0;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18)}
+.latest-k{margin:18px 4px -6px}
+details.result.compact{padding:12px 14px;background:color-mix(in srgb,var(--card) 70%,var(--bg))}details.result.compact>summary:after{display:none}
+details.result.compact .lc-games{margin:10px 0 4px}.open-hint{display:block;font-size:.78rem;color:var(--muted);margin-top:4px}
+.open-hint:after{content:" ▾"}details.result.compact[open] .open-hint:after{content:" ▴"}details.result.compact[open]>summary{margin-bottom:6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+@media (max-width:420px){.season-sum{grid-template-columns:1fr 1fr}.season-sum .medals-tile{grid-column:1/-1}}
 .seg-wide{display:flex;margin:12px 0 4px;background:var(--line);border-radius:12px;padding:3px;gap:2px;position:sticky;top:64px;z-index:10}
 .seg-wide button{flex:1;border:0 !important;border-radius:9px !important;background:transparent;padding:8px 4px;font:inherit;font-weight:700;font-size:.88rem;color:var(--muted);cursor:pointer}
 .seg-wide button[aria-selected="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.18)}
@@ -244,7 +253,7 @@ details.fold{padding:12px 14px}details.fold>summary{cursor:pointer}details.fold[
       <a class="tile" href="#points"><b>#50<small>/268</small></b><span>Points rank</span></a>
     </div><a class="card lastcard" href="#t12818">
         <div class="lc-head"><span><span class="kicker">Last tournament · Sep 26</span><b>Dick&#39;s Fall State Backpack Championships</b></span><span class="medal m-gold">3rd · Gold</span></div>
-        <div class="lc-games"><span class="lg r-W"><i>W</i>6–2<small>Carolina Lightni</small></span><span class="lg r-W"><i>W</i>7–6<small>Carolina Angels Hu</small></span><span class="lg r-L"><i>L</i>2–5<small>Weddington Royals</small></span></div>
+        <div class="lc-games"><span class="lg r-W"><i>W</i>6–2<small>Carolina Lightning Pink</small></span><span class="lg r-W"><i>W</i>7–6<small>Carolina Angels Hustedt</small></span><span class="lg r-L"><i>L</i>2–5<small>Weddington Royals Knight</small></span></div>
         <div class="lc-foot"><span class="rec-inline r-W">2–1–0</span><span class="muted small">See games, box scores &amp; bracket →</span></div></a><div class="card"><h3>Season medals</h3><div class="shelf"><a class="medal-disc" href="#t12813"><span class="disc m-gold">3rd</span><small>Gold</small><small class="muted">Aug 22</small></a><a class="medal-disc" href="#t12816"><span class="disc m-gold">5th</span><small>Gold</small><small class="muted">Sep 12</small></a><a class="medal-disc" href="#t12817"><span class="disc m-silver">2nd</span><small>Silver</small><small class="muted">Sep 19</small></a><a class="medal-disc" href="#t12818"><span class="disc m-gold">3rd</span><small>Gold</small><small class="muted">Sep 26</small></a></div></div>
       <a class="card lockcard" href="team/"><svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 1a3.5 3.5 0 0 0-3.5 3.5V7H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-.5V4.5A3.5 3.5 0 0 0 8 1zm2 6H6V4.5a2 2 0 1 1 4 0V7z"/></svg><span><b>Player stats</b><br><span class="muted small">Hitting, pitching and trends are on the team page (password required).</span></span></a>
 </section>
@@ -371,12 +380,13 @@ Finished: us 3rd Gold · them 2nd Gold">L 2–5</button></td></tr><tr class=""><
 </section>
 
 <section class="view" data-view="results" id="v-results" hidden>
-<h2 class="view-title">Results <span class="muted small">2026 · 7–5–1 W–L–T</span></h2>
-<section class="card" id="results">
-<ul class="plain season-list"><li><a href="#t12818"><span class="sl-date">Sep 26</span><span class="sl-name">Dick&#39;s Fall State Backpack Championships</span><span class="sl-rec">2–1–0</span><span class="medal m-gold">3rd · Gold</span></a></li><li><a href="#t12817"><span class="sl-date">Sep 19</span><span class="sl-name">Chelsea Parker Moneyball</span><span class="sl-rec">2–2–0</span><span class="medal m-silver">2nd · Silver</span></a></li><li><a href="#t12816"><span class="sl-date">Sep 12</span><span class="sl-name">$1,000.00 Marucci Bats to Winner and Runner-Ups</span><span class="sl-rec">2–1–0</span><span class="medal m-gold">5th · Gold</span></a></li><li><a href="#t12813"><span class="sl-date">Aug 22</span><span class="sl-name">Battle for the 2Lb Chains</span><span class="sl-rec">1–1–1</span><span class="medal m-gold">3rd · Gold</span></a></li></ul>
-<p class="small muted">Tap a tournament to open its games, box scores, standings and bracket.</p>
+<h2 class="view-title">Results <span class="muted small">2026 season</span></h2>
+<section class="season-sum" id="results">
+  <div class="tile"><b>7–5–1</b><span>W–L–T</span></div>
+  <div class="tile"><b>97–61</b><span>Runs for–against</span></div>
+  <div class="tile medals-tile"><span class="mini-discs"><span class="mini"><i class="disc sm m-gold">3</i>Gold</span><span class="mini"><i class="disc sm m-silver">1</i>Silver</span></span><span>4 tournaments</span></div>
 </section>
-<details class="card result" id="t12818" open>
+<div class="kicker latest-k">Latest</div><details class="card result" id="t12818" open>
       <summary><div class="rhead">
         <div><div class="kicker">Saturday, September 26</div>
           <b class="rname" title="DICK&#39;S FALL STATE BACKPACK CHAMPIONSHIPS-WINNER RECEIVE (12) BACKPACKS">Dick&#39;s Fall State Backpack Championships</b>
@@ -432,13 +442,15 @@ Pool Play · game 1">W 6–2</button></td></tr><tr class=""><td class="nowrap"><
       <tr class="us"><td>1</td><td class="nowrap">Sat 2:00 PM<div class="muted small">RRC:Field 2</div></td><td>Weddington Royals Knight<br>Bombers Softball 10U Beck</td><td class="num">5<br>2</td></tr><tr class=""><td>2</td><td class="nowrap">Sat 3:30 PM<div class="muted small">RRC:Field 2</div></td><td>Carolina Diamond Softball<br>Harrisburg Heat 10U</td><td class="num">0<br>16</td></tr><tr class=""><td>3</td><td class="nowrap">Sat 5:00 PM<div class="muted small">RRC:Field 2</div></td><td>Weddington Royals Knight<br>Harrisburg Heat 10U</td><td class="num">6<br>7</td></tr>
       </tbody></table></div></details><p class="small muted">4 other bracket(s) on the <a href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12818" target="_blank" rel="noopener">full schedule</a>.</p>
       <div class="links"><a class="btn" href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12818" target="_blank" rel="noopener">Full schedule on Top Gun ↗</a></div>
-    </details><details class="card result" id="t12817" >
-      <summary><div class="rhead">
-        <div><div class="kicker">Saturday, September 19</div>
-          <b class="rname" title="CHELSEA PARKER MONEYBALL -$500.00 CASH OR $1,000.00 TO FUTURE EVENTS">Chelsea Parker Moneyball</b>
-          <div class="muted small">Concord-Charlotte-Huntersville, NC · 675 pts</div></div>
-        <div class="rright"><span class="medal m-silver">2nd · Silver</span><div class="rec r-T"><b>2–2–0</b><span>W–L–T</span></div></div>
-      </div></summary>
+    </details>
+<section class="later"><div class="later-h"><h3>Earlier this season</h3><span class="muted small">3 tap to open</span></div>
+<details class="card result compact" id="t12817" >
+      <summary><div class="lt-row">
+          <div class="datetile"><span>Sep</span><b>19</b><small>Sat</small></div>
+          <div class="lt-info"><b class="rname" title="CHELSEA PARKER MONEYBALL -$500.00 CASH OR $1,000.00 TO FUTURE EVENTS">Chelsea Parker Moneyball</b>
+            <span class="muted small">Concord-Charlotte-Huntersville, NC · 675 pts</span>
+            <span class="lt-chips"><span class="medal m-silver">2nd · Silver</span><span class="rec-inline r-T">2–2–0</span></span></div>
+        </div><div class="lc-games"><span class="lg r-L"><i>L</i>3–4<small>ALab Reynolds/Hewitt</small></span><span class="lg r-W"><i>W</i>15–1<small>MP Lady Bombers-Barrier</small></span><span class="lg r-W"><i>W</i>14–1<small>On Deck O’s Hurt</small></span><span class="lg r-L"><i>L</i>4–10<small>ALAB SOFTBALL</small></span></div><span class="open-hint">Games, box scores, standings &amp; bracket</span></summary>
       <ol class="games">
       <li class="game r-L">
         <div class="when"><b>Sat</b><span>10:15 AM</span></div>
@@ -502,13 +514,13 @@ Pool Play · game 12">W 15–1</button></td></tr><tr class=""><td class="nowrap"
       <tr class=""><td>1</td><td class="nowrap">Sat 2:30 PM<div class="muted small">Bradford:Field 2</div></td><td>USA Impact Oakes<br>On Deck O’s Hurt</td><td class="num">7<br>10</td></tr><tr class=""><td>2</td><td class="nowrap">Sat 4:00 PM<div class="muted small">Bradford:Field 4</div></td><td>10U ALAB SOFTBALL<br>The Aces</td><td class="num">9<br>1</td></tr><tr class="us"><td>3</td><td class="nowrap">Sat 4:00 PM<div class="muted small">Bradford:Field 2</div></td><td>On Deck O’s Hurt<br>Bombers Softball 10U Beck</td><td class="num">1<br>14</td></tr><tr class="us"><td>4</td><td class="nowrap">Sat 5:30 PM<div class="muted small">Bradford:Field 2</div></td><td>10U ALAB SOFTBALL<br>Bombers Softball 10U Beck</td><td class="num">10<br>4</td></tr>
       </tbody></table></div></details><p class="small muted">2 other bracket(s) on the <a href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12817" target="_blank" rel="noopener">full schedule</a>.</p>
       <div class="links"><a class="btn" href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12817" target="_blank" rel="noopener">Full schedule on Top Gun ↗</a></div>
-    </details><details class="card result" id="t12816" >
-      <summary><div class="rhead">
-        <div><div class="kicker">Saturday, September 12</div>
-          <b class="rname" title="$1,000.00 MARUCCI BATS TO WINNER AND RUNNER-UPS-ENTER EARLY SOFTBALLS">$1,000.00 Marucci Bats to Winner and Runner-Ups</b>
-          <div class="muted small">Concord-Charlotte-Huntersville, NC · 200 pts</div></div>
-        <div class="rright"><span class="medal m-gold">5th · Gold</span><div class="rec r-W"><b>2–1–0</b><span>W–L–T</span></div></div>
-      </div></summary>
+    </details><details class="card result compact" id="t12816" >
+      <summary><div class="lt-row">
+          <div class="datetile"><span>Sep</span><b>12</b><small>Sat</small></div>
+          <div class="lt-info"><b class="rname" title="$1,000.00 MARUCCI BATS TO WINNER AND RUNNER-UPS-ENTER EARLY SOFTBALLS">$1,000.00 Marucci Bats to Winner and Runner-Ups</b>
+            <span class="muted small">Concord-Charlotte-Huntersville, NC · 200 pts</span>
+            <span class="lt-chips"><span class="medal m-gold">5th · Gold</span><span class="rec-inline r-W">2–1–0</span></span></div>
+        </div><div class="lc-games"><span class="lg r-W"><i>W</i>13–4<small>Carolina Force</small></span><span class="lg r-W"><i>W</i>11–4<small>Carolina Lightning Purple</small></span><span class="lg r-L"><i>L</i>7–8<small>Mambas Vardo</small></span></div><span class="open-hint">Games, box scores, standings &amp; bracket</span></summary>
       <ol class="games">
       <li class="game r-W">
         <div class="when"><b>Sat</b><span>10:15 AM</span></div>
@@ -558,13 +570,13 @@ Pool Play · game 8">W 13–4</button></td></tr><tr class=""><td class="nowrap">
       <tr class="us"><td>1</td><td class="nowrap">Sat 3:00 PM<div class="muted small">Bradford:Field 1</div></td><td>Mambas Vardo<br>Bombers Softball 10U Beck</td><td class="num">8<br>7</td></tr><tr class=""><td>2</td><td class="nowrap">Sat 4:30 PM<div class="muted small">Bradford:Field 1</div></td><td>Extreme Performance White<br>Lincoln County Diamonds</td><td class="num"><br></td></tr><tr class=""><td>3</td><td class="nowrap">Sat 6:00 PM<div class="muted small">Bradford:Field 1</div></td><td>Mambas Vardo<br>Booyah-Renegar 2016</td><td class="num"><br></td></tr><tr class=""><td>4</td><td class="nowrap">Sat 7:30 PM<div class="muted small">Bradford:Field 1</div></td><td><span class="muted">Winner Game #2</span><br><span class="muted">Winner Game #3</span></td><td class="num"><br></td></tr>
       </tbody></table></div></details><p class="small muted">4 other bracket(s) on the <a href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12816" target="_blank" rel="noopener">full schedule</a>.</p>
       <div class="links"><a class="btn" href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12816" target="_blank" rel="noopener">Full schedule on Top Gun ↗</a></div>
-    </details><details class="card result" id="t12813" >
-      <summary><div class="rhead">
-        <div><div class="kicker">Sat, Aug 22 – Sun, Aug 23</div>
-          <b class="rname" title="BATTLE FOR THE 2LB CHAINS-ENTER EARLY FIRST (4) TEAM RECEIVE SOFTBALLS">Battle for the 2Lb Chains</b>
-          <div class="muted small">Concord-Charlotte-Huntersville, NC · 450 pts</div></div>
-        <div class="rright"><span class="medal m-gold">3rd · Gold</span><div class="rec r-T"><b>1–1–1</b><span>W–L–T</span></div></div>
-      </div></summary>
+    </details><details class="card result compact" id="t12813" >
+      <summary><div class="lt-row">
+          <div class="datetile"><span>Aug</span><b>22</b><small>Sat</small></div>
+          <div class="lt-info"><b class="rname" title="BATTLE FOR THE 2LB CHAINS-ENTER EARLY FIRST (4) TEAM RECEIVE SOFTBALLS">Battle for the 2Lb Chains</b>
+            <span class="muted small">Concord-Charlotte-Huntersville, NC · 450 pts</span>
+            <span class="lt-chips"><span class="medal m-gold">3rd · Gold</span><span class="rec-inline r-T">1–1–1</span></span></div>
+        </div><div class="lc-games"><span class="lg r-T"><i>T</i>4–4<small>Lady Smoke</small></span><span class="lg r-W"><i>W</i>8–4<small>Carolina Force</small></span><span class="lg r-L"><i>L</i>3–8<small>Team North Carolina Tejeda</small></span></div><span class="open-hint">Games, box scores, standings &amp; bracket</span></summary>
       <ol class="games">
       <li class="game r-T">
         <div class="when"><b>Sun</b><span>9:00 AM</span></div>
@@ -615,6 +627,7 @@ Pool Play · game 5">W 8–4</button></td></tr>
       </tbody></table></div></details><p class="small muted">1 other bracket(s) on the <a href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12813" target="_blank" rel="noopener">full schedule</a>.</p>
       <div class="links"><a class="btn" href="https://playtopgunsports.com/GameTimesResults.aspx?trnid=12813" target="_blank" rel="noopener">Full schedule on Top Gun ↗</a></div>
     </details>
+</section>
 </section>
 
 <section class="view" data-view="players" id="v-players" hidden>
@@ -2923,7 +2936,7 @@ Finished: us 3rd Gold · them 1st Gold">L 3–8</button></td></tr><tr class=" un
 </section>
 
 
-<footer>Updated Sun, Sep 27, 9:55 PM ET from
+<footer>Updated Sun, Sep 27, 10:03 PM ET from
 <a href="https://playtopgunsports.com/TeamPage/EntryPoint.aspx?p2=36582" target="_blank" rel="noopener">playtopgunsports.com</a> and topgunstats.com.<br>Checked automatically — daily, and hourly around tournaments. Team members: <a href="team/">full page with player stats</a>.</footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
