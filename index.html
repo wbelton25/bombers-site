@@ -213,6 +213,21 @@ details.result.compact{padding:12px 14px;background:color-mix(in srgb,var(--card
 details.result.compact .lc-games{margin:10px 0 4px}.open-hint{display:block;font-size:.78rem;color:var(--muted);margin-top:4px}
 .open-hint:after{content:" ▾"}details.result.compact[open] .open-hint:after{content:" ▴"}details.result.compact[open]>summary{margin-bottom:6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
 @media (max-width:420px){.season-sum{grid-template-columns:1fr 1fr}.season-sum .medals-tile{grid-column:1/-1}}
+/* stat key */
+.statkey{margin-top:10px}.keylist{margin:4px 0 0;display:grid;gap:2px}.keylist>div{padding:8px 0;border-bottom:1px solid var(--line)}.keylist>div:last-child{border:0}
+.keylist dt{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}.keylist dd{margin:3px 0 0;font-size:.86rem;color:var(--muted)}
+.k-abbr{font-weight:900;font-size:.78rem;padding:1px 7px;border-radius:6px;background:var(--brand);color:#fff;letter-spacing:.02em}.k-team{margin-left:auto;font-size:.78rem;font-weight:700;color:var(--ink);background:var(--line);padding:1px 8px;border-radius:99px}
+/* roster */
+.roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;margin-top:8px}
+.pl-card{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink);background:var(--card)}
+a.pl-card:hover{border-color:var(--brand)}
+.jersey{flex-shrink:0;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:.95rem;background:var(--brand);color:#fff;box-shadow:inset 0 -3px 0 rgba(0,0,0,.2)}.jersey.none{background:var(--line);color:var(--muted)}
+.pl-body{display:flex;flex-direction:column;gap:3px;min-width:0}.pl-body>b{font-size:1rem}
+.pos-chips{display:flex;gap:4px;flex-wrap:wrap}.pos{font-size:.7rem;font-weight:800;padding:1px 7px;border-radius:6px;border:1px solid var(--line);background:color-mix(in srgb,var(--accent) 22%,transparent)}
+.pl-stats{font-size:.8rem;color:var(--muted)}.pl-stats b{color:var(--ink)}
+.coach-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.coach{display:flex;gap:10px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:12px}.coach small{display:block;color:var(--muted);font-size:.78rem}
+.avatar{flex-shrink:0;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.8rem;background:var(--accent);color:#231a00}
 .seg-wide{display:flex;margin:12px 0 4px;background:var(--line);border-radius:12px;padding:3px;gap:2px;position:sticky;top:64px;z-index:10}
 .seg-wide button{flex:1;border:0 !important;border-radius:9px !important;background:transparent;padding:8px 4px;font:inherit;font-weight:700;font-size:.88rem;color:var(--muted);cursor:pointer}
 .seg-wide button[aria-selected="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.18)}
@@ -632,12 +647,8 @@ Pool Play · game 5">W 8–4</button></td></tr>
 
 <section class="view" data-view="players" id="v-players" hidden>
 <h2 class="view-title">Players</h2>
-<a class="card lockcard" href="team/"><svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 1a3.5 3.5 0 0 0-3.5 3.5V7H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-.5V4.5A3.5 3.5 0 0 0 8 1zm2 6H6V4.5a2 2 0 1 1 4 0V7z"/></svg><span><b>Player stats are on the team page</b><br><span class="muted small">Hitting, pitching, fielding and game-by-game trends. Team password required.</span></span></a><section class="card" id="team"><h3>Roster</h3>
-<p class="small">12 players. Names and player stats are on the <a href="team/">team page</a> (team password required).</p><ul class="roster"></ul>
-
-<h3 style="margin-top:14px">Coaches</h3>
-<ul class="plain"><li><b>Chad Beck</b> <span class="muted">Head Coach</span></li><li><b>Tyler Bowers</b> <span class="muted">Assistant Coach</span></li><li><b>Brittany Prunty</b> <span class="muted">Team Administrator</span></li></ul>
-</section>
+<a class="card lockcard" href="team/"><svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 1a3.5 3.5 0 0 0-3.5 3.5V7H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-.5V4.5A3.5 3.5 0 0 0 8 1zm2 6H6V4.5a2 2 0 1 1 4 0V7z"/></svg><span><b>Player stats are on the team page</b><br><span class="muted small">Hitting, pitching, fielding and game-by-game trends. Team password required.</span></span></a><section class="card" id="team"><h3>Roster <span class="muted small">12 players</span></h3>
+<p class="small">Player names and stats are on the <a href="team/">team page</a> (team password required).</p><h3 class="sub-h">Coaches &amp; staff</h3><div class="coach-grid"><div class="coach"><span class="avatar">CB</span><span><b>Chad Beck</b><small>Head Coach</small></span></div><div class="coach"><span class="avatar">TB</span><span><b>Tyler Bowers</b><small>Assistant Coach</small></span></div><div class="coach"><span class="avatar">BP</span><span><b>Brittany Prunty</b><small>Team Administrator</small></span></div></div></section>
 </section>
 <section class="view" data-view="rankings" id="v-rankings" hidden>
 <h2 class="view-title">Rankings</h2>
@@ -2936,7 +2947,7 @@ Finished: us 3rd Gold · them 1st Gold">L 3–8</button></td></tr><tr class=" un
 </section>
 
 
-<footer>Updated Sun, Sep 27, 10:03 PM ET from
+<footer>Updated Sun, Sep 27, 10:13 PM ET from
 <a href="https://playtopgunsports.com/TeamPage/EntryPoint.aspx?p2=36582" target="_blank" rel="noopener">playtopgunsports.com</a> and topgunstats.com.<br>Checked automatically — daily, and hourly around tournaments. Team members: <a href="team/">full page with player stats</a>.</footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
