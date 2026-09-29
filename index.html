@@ -224,7 +224,7 @@ footer.fresh{text-align:center}
 .upd{display:flex;flex-direction:column;gap:4px}.upd ul{margin:4px 0;padding-left:18px;font-size:.88rem}.upd-go{font-weight:600;color:var(--hi);font-size:.88rem}
 @media (max-width:420px){.logo-badge{width:44px;height:44px}.logo{width:33px;height:33px}.brand{gap:8px}.stats-btn{padding:6px 9px;font-size:.8rem;gap:4px}.top-in{gap:6px}}
 .np-ev{display:flex;flex-direction:column;gap:3px}.np-ev[hidden]{display:none}
-.src{display:flex;flex-direction:column;gap:2px;padding:8px 0;border-top:1px solid var(--line);font-size:.88rem}.sources h3+.src{border-top:0}
+.src{display:flex;flex-direction:column;gap:2px;padding:8px 0;border-top:1px solid var(--line);font-size:.88rem}.sources summary+.src{border-top:0}
 .lockcard{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink)}.lockcard>svg{width:22px;height:22px;flex-shrink:0;color:var(--brand)}
 /* toggles */
 /* schedule: later tournaments, clearly separate from Next up */
@@ -651,15 +651,15 @@ Pool Play · game 5">W 8–4</button></td></tr>
 
 </section>
 <section class="view" data-view="updates" id="v-updates" hidden>
-<h2 class="view-title">Updates <span class="muted small">what changed on Top Gun, newest first</span></h2>
-<section class="card sources"><h3>Where this comes from</h3>
-<div class="src"><b>Top Gun</b> <span class="muted small">schedule, results, points · daily at 7 AM, hourly around tournaments</span>
-  <span>Checked <time data-fresh data-check="topgun">Tue, Sep 29, 9:57 AM</time> · last change <time data-fresh>Tue, Sep 29, 9:36 AM</time></span></div>
-
-
-<p class="small muted">"Last checked" is the most recent time the site looked for changes; "last change" is when something actually changed. This page isn't the official source — confirm times on Top Gun, TeamSnap and GameChanger.</p></section>
+<h2 class="view-title">Updates <span class="muted small">what's changed, newest first</span></h2>
 <article class="card upd"><span class="kicker">Tue, Sep 29, 9:36 AM</span>
     <b>Halloween Havoc (Sat, Oct 24): now 23 10U teams entered</b><ul><li>Dropped out: Carolina Hurricanes- Ford</li></ul><a class="upd-go" href="#entries">See it →</a></article>
+<details class="card fold sources" id="sources"><summary><b>Where this comes from</b> <span class="muted small">· last checked <time data-fresh data-check="topgun">Tue, Sep 29, 10:07 AM</time></span></summary>
+<div class="src"><b>Top Gun</b> <span class="muted small">schedule, results, points · daily at 7 AM, hourly around tournaments</span>
+  <span>Checked <time data-fresh data-check="topgun">Tue, Sep 29, 10:07 AM</time> · last change <time data-fresh>Tue, Sep 29, 9:36 AM</time></span></div>
+
+
+<p class="small muted">"Last checked" is the most recent time the site looked for changes; "last change" is when something actually changed. This page isn't the official source — confirm times on Top Gun, TeamSnap and GameChanger.</p></details>
 <p class="small muted">The same changes the email alerts report, from the last 60 days. The dot on the bell means something new since you last looked.</p>
 </section>
 <section class="view" data-view="rankings" id="v-rankings" hidden>
@@ -2931,7 +2931,7 @@ Finished: us 3rd Gold · them 1st Gold">L 3–8</button></span></span>
 </section>
 
 
-<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Tue, Sep 29, 9:57 AM</time></span> · <a href="#updates">Details</a> · <a href="team/">Team login</a></footer>
+<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Tue, Sep 29, 10:07 AM</time></span> · <a href="#sources">Details</a> · <a href="team/">Team login</a></footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
 <script>
