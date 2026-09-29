@@ -1,6 +1,6 @@
 {
- "points": "875",
- "rank": "27 of 93",
+ "points": "1,100",
+ "rank": "25 of 92",
  "official": [
   {
    "date": "08/22/2026",
@@ -23,8 +23,46 @@
   {
    "date": "09/26/2026",
    "name": "Dick's Fall State Backpack Championships-Winner Receive (12) Backpacks",
-   "finish": "",
-   "points": "0"
+   "finish": "4th (Gold)",
+   "points": "225"
+  }
+ ],
+ "summary": [
+  {
+   "date": "08/22/2026",
+   "name": "Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs",
+   "finish": "3rd (Gold)",
+   "points": "450"
+  },
+  {
+   "date": "09/12/2026",
+   "name": "$1,000.00 MARUCCI BATS TO WINNER AND RUNNER-UPS-ENTER EARLY SOFTBALLS",
+   "won": 2,
+   "lost": 1,
+   "rs": 31,
+   "ra": 16,
+   "finish": "5th (Gold)",
+   "points": "200"
+  },
+  {
+   "date": "09/19/2026",
+   "name": "CHELSEA PARKER MONEYBALL -$500.00 CASH OR $1,000.00 TO FUTURE EVENTS",
+   "won": 2,
+   "lost": 2,
+   "rs": 36,
+   "ra": 16,
+   "finish": "2nd (Silver)",
+   "points": "675"
+  },
+  {
+   "date": "09/26/2026",
+   "name": "DICK'S FALL STATE BACKPACK CHAMPIONSHIPS-WINNER RECEIVE (12) BACKPACKS",
+   "won": 2,
+   "lost": 1,
+   "rs": 15,
+   "ra": 13,
+   "finish": "4th (Gold)",
+   "points": "225"
   }
  ],
  "entries": [
