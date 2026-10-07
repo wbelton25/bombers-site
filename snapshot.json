@@ -67,43 +67,6 @@
  ],
  "entries": [
   {
-   "id": 12818,
-   "name": "Dick's Fall State Backpack Championships-Winner Receive (12) Backpacks",
-   "start": "2026-09-26",
-   "end": "2026-09-26",
-   "confirmed": true,
-   "waitlist": false,
-   "age": "10U",
-   "teams": [
-    "Bandits NC - Black",
-    "Bandits NC-Orange",
-    "Bombers Softball 10U Beck",
-    "Cage 2 Stage-Barnes",
-    "Carolina Aces",
-    "Carolina Angels Hustedt",
-    "Carolina Diamond Softball",
-    "Carolina Force",
-    "Carolina Hurricanes- Ford",
-    "Carolina Lightning 10U Pink",
-    "Carolina Lightning 10U Purple",
-    "Carolina Smoke Teal",
-    "Davie Crushers",
-    "Harrisburg Heat 10U",
-    "Knockouts Adams/Salyers",
-    "Knockouts Noel 10U",
-    "Lexington Flying Pigs Elite Young",
-    "Mambas Vardo",
-    "SFA Stars",
-    "Weddington Royals Knight"
-   ],
-   "notes": [
-    "DICK'S FALL STATE",
-    "BACKPACK CHAMPIONSHIPS",
-    "ALL WINNING TEAMS IN ALL AGES ALL BRACKETS WILL RECEIVE (12) TOP GUN-USA BACKPACKS",
-    "ALL WINNING AND RUNNER UP TEAMS WILL RECEIVE (12) TOP GUN-USA CUSTOM MADE JUMBO RINGS, PLUS TEAMS BANNERS\""
-   ]
-  },
-  {
    "id": 12820,
    "name": "Big Pink Out Weekend · Big Pink Chains, Pink Bag Tags, Pink Prizes",
    "start": "2026-10-10",
@@ -117,6 +80,7 @@
     "Carolina Force",
     "Carolina Hurricanes- Ford",
     "Carolina Lightning 10U Pink",
+    "Carolina Lightning 10U Purple",
     "CoulOak Black Widows - Deko",
     "Extreme Performance",
     "Knockouts Adams/Salyers",
