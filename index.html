@@ -159,7 +159,7 @@ header.top{position:sticky;top:0;z-index:20;padding:calc(env(safe-area-inset-top
 html.dark .tabbar a[aria-current="page"]{color:var(--hi)}html.dark .tabbar a[aria-current="page"] svg{background:color-mix(in srgb,var(--hi) 16%,transparent)}
 @media (min-width:800px){.tabbar{max-width:760px;margin:0 auto;border:1px solid var(--line);border-bottom:0;border-radius:16px 16px 0 0}}
 /* home */
-.hero{display:flex;gap:14px;align-items:center;margin-top:16px;padding:16px;border-radius:18px;background:linear-gradient(135deg,var(--navy) 0%,#0a3572 65%,#0d4a6e 100%);border-bottom:4px solid var(--green);color:#fff;text-decoration:none;box-shadow:0 8px 24px rgba(2,27,68,.3)}
+.hero{display:flex;flex-direction:column;gap:0;align-items:stretch;margin-top:16px;padding:16px;border-radius:18px;background:linear-gradient(135deg,var(--navy) 0%,#0a3572 65%,#0d4a6e 100%);border-bottom:4px solid var(--green);color:#fff;text-decoration:none;box-shadow:0 8px 24px rgba(2,27,68,.3)}
 .hero-count{flex-shrink:0;width:76px;height:76px;border-radius:16px;background:rgba(255,255,255,.16);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
 .hero-count b{font-size:2.1rem;line-height:1;letter-spacing:-.02em}.hero-count span{font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;opacity:.9;margin-top:3px}
 .hero .kicker{color:#ffd66b}.hero-body{display:flex;flex-direction:column;gap:2px;min-width:0}.hero-name{font-size:1.2rem;line-height:1.2}.hero-sub{font-size:.85rem;opacity:.88}
@@ -270,6 +270,10 @@ footer.fresh{text-align:center}
 .od-odds{display:flex;flex-direction:column;align-items:center;min-width:52px;padding:4px 8px;border-radius:10px;font-weight:800;font-size:1rem;color:#fff;background:color-mix(in srgb,var(--win) calc(var(--p)*1%),var(--loss))}.od-odds small{font-size:.62rem;font-weight:600;opacity:.9}
 .ev-tabs{margin:18px 0 10px}.ev-pane>h4:first-child{margin-top:4px}
 .ev-rows{margin-top:14px;border-top:1px solid var(--line)}.ev-rows>details{border-bottom:1px solid var(--line);padding:10px 0}.ev-rows>details>summary{cursor:pointer;font-weight:600}
+.hero-top{display:flex;gap:14px;align-items:center}
+.hero-games2{display:flex;flex-direction:column;gap:6px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.18)}
+.hg2{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 12px;border-radius:12px;background:rgba(255,255,255,.12)}
+.hg2-time{font-weight:800;color:#ffd66b;white-space:nowrap;font-size:.95rem}.hg2-opp{font-weight:700;font-size:1rem;line-height:1.25}.hg2-f{font-size:.78rem;opacity:.8;white-space:nowrap}.hg2 .badge{color:#fff}
 .lockcard{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink)}.lockcard>svg{width:22px;height:22px;flex-shrink:0;color:var(--brand)}
 /* toggles */
 /* schedule: later tournaments, clearly separate from Next up */
@@ -372,7 +376,7 @@ details.fold{padding:12px 14px}details.fold>summary{cursor:pointer}details.fold[
 <main class="wrap">
 
 <section class="view" data-view="home" id="v-home">
-<a class="hero" href="#schedule">
+<a class="hero" href="#schedule"><div class="hero-top">
         <div class="hero-count" data-start="2026-10-10" data-end="2026-10-10"><b>2</b><span>days to go</span></div>
         <div class="hero-body">
           <span class="kicker">Next tournament</span>
@@ -380,8 +384,8 @@ details.fold{padding:12px 14px}details.fold>summary{cursor:pointer}details.fold[
           <span class="hero-sub">Sat, Oct 10 · Nevins Park · Charlotte, NC</span>
           <span class="hero-chips"><span class="pill ok">Confirmed</span><span class="pill">19 teams</span></span>
           <span class="hero-wx"><span><i aria-hidden="true">🌦️</i>Sat 68° · 91% rain</span></span>
-        </div></a>
-        <div class="card hero-games"><div class="hg"><span class="hg-time">Sat 9:00 AM</span><span>vs Carolina Lightning 10U Pink</span></div><div class="hg"><span class="hg-time">Sat 11:30 AM</span><span>vs Palmetto Reign</span></div></div><section class="card season-card"><span class="kicker">2026 season</span><div class="tiles">
+        </div></div><div class="hero-games2"><div class="hg2"><span class="hg2-time">9:00 AM</span><span class="hg2-opp">vs Carolina Lightning Pink</span><span class="hg2-f">Field 2</span></div><div class="hg2"><span class="hg2-time">11:30 AM</span><span class="hg2-opp">vs Palmetto Reign</span><span class="hg2-f">Field 2</span></div></div></a>
+        <section class="card season-card"><span class="kicker">2026 season</span><div class="tiles">
       <a class="tile" href="#results"><b>7–5–1</b><span>Record (W–L–T)</span></a>
       
       
@@ -3021,7 +3025,7 @@ Finished: us 5th Gold · them still alive">L 7–8</button></span></span>
 </section>
 
 
-<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Thu, Oct 8, 8:59 PM</time></span> · <a href="team/">Team login</a></footer>
+<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Thu, Oct 8, 9:09 PM</time></span> · <a href="team/">Team login</a></footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
 <script>
