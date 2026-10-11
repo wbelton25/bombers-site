@@ -375,35 +375,10 @@
    ],
    "finish": "3rd · Gold"
   },
-  "12820": {
-   "name": "Big Pink Out Weekend · Big Pink Chains, Pink Bag Tags, Pink Prizes",
-   "start": "2026-10-10",
-   "games": [
-    {
-     "key": "12820|Pool Play|2",
-     "section": "Pool Play",
-     "no": "2",
-     "day": "Sat",
-     "time": "9:00 AM",
-     "field": "Nevins:Field 2",
-     "opp": "⚡️Carolina Lightning 10U Pink⚡️",
-     "us": "",
-     "them": "",
-     "result": ""
-    },
-    {
-     "key": "12820|Pool Play|10",
-     "section": "Pool Play",
-     "no": "10",
-     "day": "Sat",
-     "time": "11:30 AM",
-     "field": "Nevins:Field 2",
-     "opp": "Palmetto Reign",
-     "us": "",
-     "them": "",
-     "result": ""
-    }
-   ],
+  "12822": {
+   "name": "Halloween Havoc · Monster Mash Championships with Monster Mash Rings",
+   "start": "2026-10-24",
+   "games": [],
    "finish": null
   }
  }
