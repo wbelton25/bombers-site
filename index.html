@@ -3048,7 +3048,7 @@ Finished: us 5th Gold · them still alive">L 7–8</button></span></span>
 </section>
 
 
-<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Mon, Oct 12, 11:32 AM</time></span> · <a href="team/">Team login</a></footer>
+<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Mon, Oct 12, 11:36 AM</time></span><span class="next-chk" hidden> · Next check <time data-next></time></span> · <a href="team/">Team login</a></footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
 <script>
@@ -3086,15 +3086,39 @@ function showView(v) {
 // Day-relative labels (countdown, "Today"/"Tomorrow") use the viewer's date, since the page can be hours old.
 (function checked() {
   const els = document.querySelectorAll('time[data-check]'); if (!els.length || location.protocol === 'file:') return;
-  fetch('/checked.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(c => {
+  const get = f => fetch(f, { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
+  Promise.all([get('/checked.json'), get('/status.json')]).then(([c, st]) => {
     if (!c) return;
     const fmt = iso => new Date(iso).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
     els.forEach(el => {
       const k = el.dataset.check, iso = k === 'any' ? [c.topgun, c.teamsnap].filter(Boolean).sort().pop() : c[k];
       if (iso) el.textContent = fmt(iso);
     });
-  }).catch(() => {});
+    const nx = st && nextCheck(Date.parse(c.topgun), st.events || [], Date.now());
+    if (!nx) return;
+    document.querySelectorAll('time[data-next]').forEach(el => { el.textContent = typeof nx === 'string' ? nx : 'about ' + fmt(nx); });
+    document.querySelectorAll('.next-chk').forEach(el => { el.hidden = false; });
+  });
 })();
+// When the next Top Gun check should happen — mirrors gate.js: daily (20 h), every ~50 min from 3 days before a
+// tournament, every tick during games, and right after midnight once a tournament has ended.
+function nextCheck(last, events, now) {
+  if (!last) return null;
+  const day = t => new Date(t).toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+  const mins = t => { const [h, m] = new Date(t).toLocaleTimeString('en-GB', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit' }).split(':'); return +h % 24 * 60 + +m; };
+  const addDays = (d, n) => { const x = new Date(d + 'T12:00:00Z'); x.setUTCDate(x.getUTCDate() + n); return x.toISOString().slice(0, 10); };
+  const midnight = d => { const t = Date.parse(d + 'T05:00:00Z'); return /GMT-4/.test(new Date(t).toLocaleString('en-US', { timeZone: 'America/New_York', timeZoneName: 'shortOffset' })) ? t - 3600e3 : t; };
+  const hour = t => Math.ceil(t / 3600e3) * 3600e3;
+  const today = day(now), lastDay = day(last);
+  if (events.some(e => e.firstGame != null && today >= e.start && today <= e.end && mins(now) >= e.firstGame + 30 && mins(now) <= e.lastGame + 120)) return 'every 10 minutes during games';
+  const hot = events.some(e => today >= addDays(e.start, -3) && today <= e.end);
+  let due = last + (hot ? 50 : 20 * 60) * 60e3;
+  for (const e of events) {
+    if (e.end >= lastDay) due = Math.min(due, midnight(addDays(e.end, 1)));                       // moves on after a tournament
+    const warm = midnight(addDays(e.start, -3)); if (warm > last) due = Math.min(due, Math.max(warm, last + 50 * 60e3));   // hourly checks start
+  }
+  return hour(Math.max(due, now));
+}
 (function foodMaps() {
   const parks = document.querySelectorAll('details.food-park'); if (!parks.length) return;
   let loading = null;
@@ -3249,7 +3273,7 @@ if (location.protocol === 'https:' && 'serviceWorker' in navigator) navigator.se
 (() => {
   if (location.protocol !== 'https:') return;
   const off = document.createElement('div'); off.className = 'offline-note'; off.setAttribute('role', 'status');
-  off.textContent = "You're offline — showing info saved " + "Mon, Oct 12, 11:32 AM";
+  off.textContent = "You're offline — showing info saved " + "Mon, Oct 12, 11:36 AM";
   document.body.prepend(off);
   const sync = () => { off.hidden = navigator.onLine; }; sync();
   addEventListener('online', sync); addEventListener('offline', sync);
