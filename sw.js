@@ -13,6 +13,27 @@ self.addEventListener('activate', e => e.waitUntil((async () => {
   await self.clients.claim();
 })()));
 
+// Phone alerts (sent by push.js): show the notification and put a count on the app icon where supported.
+self.addEventListener('push', e => {
+  let m = {}; try { m = e.data ? e.data.json() : {}; } catch (err) {}
+  e.waitUntil((async () => {
+    await self.registration.showNotification(m.title || 'Bombers update', { body: m.body || '', icon: '/icon-192.png', badge: '/badge-96.png', tag: m.tag, data: { url: m.url || '/' } });
+    if (navigator.setAppBadge) await navigator.setAppBadge((await self.registration.getNotifications()).length).catch(() => {});
+  })());
+});
+// Tapping one opens the site (the tab already open, or the app) at the right screen.
+self.addEventListener('notificationclick', e => {
+  e.notification.close();
+  e.waitUntil((async () => {
+    const want = new URL(e.notification.data?.url || '/', location.origin);
+    const open = (await clients.matchAll({ type: 'window', includeUncontrolled: true })).find(c => new URL(c.url).origin === location.origin);
+    if (open) { const u = new URL(open.url); u.hash = want.hash; await open.focus(); await open.navigate(u.href).catch(() => {}); }
+    else await clients.openWindow(want.href);
+    const left = (await self.registration.getNotifications()).length;
+    if (navigator.setAppBadge) await (left ? navigator.setAppBadge(left) : navigator.clearAppBadge()).catch(() => {});
+  })());
+});
+
 self.addEventListener('fetch', e => {
   const r = e.request, u = new URL(r.url);
   if (r.method !== 'GET' || u.origin !== location.origin) return;
