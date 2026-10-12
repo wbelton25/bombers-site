@@ -38,7 +38,9 @@ self.addEventListener('fetch', e => {
   const r = e.request, u = new URL(r.url);
   if (r.method !== 'GET' || u.origin !== location.origin) return;
   const key = keyOf(u);
-  const net = fetch(r).then(async res => {
+  // Pages always ask the server (cheap when unchanged), never the browser's 10-minute copy, so a new version
+  // shows on the next open. new Response(...) drops the "redirected" flag a navigation can't use (/team → /team/).
+  const net = (r.mode === 'navigate' ? fetch(r.url, { cache: 'no-cache', credentials: 'same-origin' }).then(res => res.redirected ? new Response(res.body, res) : res) : fetch(r)).then(async res => {
     if (res.ok) await (await caches.open(CACHE)).put(key, res.clone());
     return res;
   });
