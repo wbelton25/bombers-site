@@ -117,6 +117,8 @@
     "Weddington Royals Knight"
    ],
    "notes": [
+    "DUE TO THE UMBER OF TEAMS PARTICIPATING THIS WEEKEND NO REQUEST WERE TAKEN. I APOLOGIZE FOR ANY INCONVENIENCE",
+    "THAT THIS MAY CAUSE YOUR TEAM. IF YOU DID HAVE A REQUEST, I WILL DO MY BEST TO MAKE IT UP TO YOU LATER ON!!!!",
     "PINK MONEY BALL",
     "THIS WEEKEND WE WILL BE QUAIFYING PLAYERS TO THE ALL-AMERICAN TOP (100) SKILLS PROSPECT COMBINE",
     "COMBINE STATS TAKEN AT THE COMBINE WILL BE APPLIED TO EACH PLAYER COLLEGE PROFILES",
@@ -382,7 +384,32 @@
   "12821": {
    "name": "Pink Money Ball · Backpack Championships-Pink Hats to All Teams Entered",
    "start": "2026-10-17",
-   "games": [],
+   "games": [
+    {
+     "key": "12821|Pool Play|4",
+     "section": "Pool Play",
+     "no": "4",
+     "day": "Sat",
+     "time": "8:30 AM",
+     "field": "Nevins:Field 4",
+     "opp": "⚡️Carolina Lightning 10U Purple⚡️",
+     "us": "",
+     "them": "",
+     "result": ""
+    },
+    {
+     "key": "12821|Pool Play|10",
+     "section": "Pool Play",
+     "no": "10",
+     "day": "Sat",
+     "time": "12:15 PM",
+     "field": "Nevins:Field 2",
+     "opp": "🕷️CoulOak Black Widows - Deko🕷️",
+     "us": "",
+     "them": "",
+     "result": ""
+    }
+   ],
    "finish": null
   }
  }
