@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//bombers.beltonglobal.com//games//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bombers Softball 10U Beck games
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:game-12821-poolplay-4@bombers.beltonglobal.com
+DTSTAMP:20261015T203323Z
+DTSTART:20261017T123000Z
+DTEND:20261017T134500Z
+SUMMARY:Bombers vs Carolina Lightning 10U Purple
+LOCATION:Nevins Park\, 6000 Statesville Rd. Charlotte\, NC 28269
+DESCRIPTION:Pink Money Ball · Backpack Championships-Pink Hats to All Tea
+ ms Entered · Pool Play\nField: Nevins · Field 4\nhttps://playtopgunspor
+ ts.com/GameTimesResults.aspx?trnid=12821
+END:VEVENT
+BEGIN:VEVENT
+UID:game-12821-poolplay-10@bombers.beltonglobal.com
+DTSTAMP:20261015T203323Z
+DTSTART:20261017T161500Z
+DTEND:20261017T173000Z
+SUMMARY:Bombers vs CoulOak Black Widows - Deko
+LOCATION:Nevins Park\, 6000 Statesville Rd. Charlotte\, NC 28269
+DESCRIPTION:Pink Money Ball · Backpack Championships-Pink Hats to All Tea
+ ms Entered · Pool Play\nField: Nevins · Field 2\nhttps://playtopgunspor
+ ts.com/GameTimesResults.aspx?trnid=12821
+END:VEVENT
+BEGIN:VEVENT
+UID:trn-12822@bombers.beltonglobal.com
+DTSTAMP:20261015T203323Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Bombers: Halloween Havoc · Monster Mash Championships with Monste
+ r Mash Rings
+LOCATION:Concord-Charlotte-Huntersville\, NC
+DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
+ imesResults.aspx?trnid=12822
+END:VEVENT
+BEGIN:VEVENT
+UID:trn-12418@bombers.beltonglobal.com
+DTSTAMP:20261015T203323Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261116
+SUMMARY:Bombers: Winter (Turf) National Championships
+LOCATION:Charleston\, SC
+DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
+ imesResults.aspx?trnid=12418
+END:VEVENT
+END:VCALENDAR
