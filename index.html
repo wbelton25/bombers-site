@@ -213,7 +213,7 @@ html.dark .cancel-banner{background:#3a1717;border-color:#7a2e2e;color:#f5c2c2}
 .ts-more summary{padding:8px 0;font-weight:600;color:var(--hi);cursor:pointer}
 .np-card{display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);border-left:4px solid var(--green)}.np-t{font-size:1.1rem}.np-off{font-size:.86rem;margin-top:4px}.np-more{margin-top:4px}
 .logout-row{text-align:center;margin:22px 0 6px}.logout{font:inherit;font-size:.85rem;color:var(--muted);background:none;border:1px solid var(--line);border-radius:99px;padding:6px 14px;cursor:pointer}
-.bp-list{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}.bp-row{border:1px solid var(--line);border-radius:12px;background:var(--card)}.bp-row.us{border-color:var(--hi);box-shadow:inset 3px 0 0 var(--hi)}
+.bp-sum{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:4px 0 10px;font-size:.9rem}.bp-list{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}.bp-row{border:1px solid var(--line);border-radius:12px;background:var(--card)}.bp-row.us{border-color:var(--hi);box-shadow:inset 3px 0 0 var(--hi)}
 .bp-row>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 10px}.bp-row>summary::-webkit-details-marker{display:none}.bp-seed{font-weight:700;min-width:2.2em}
 .bp-chain{display:flex;flex-wrap:wrap;align-items:center;gap:2px 6px;flex:1;font-size:.85rem;font-weight:600}.bp-chain span{display:flex;flex-direction:column;line-height:1.15}.bp-chain small{font-weight:400;color:var(--muted);font-size:.72rem}.bp-chain i{color:var(--muted);font-style:normal}
 .bp-p{font-size:.8rem;font-weight:700;color:var(--hi);display:flex;flex-direction:column;align-items:flex-end;line-height:1.1}.bp-p small{font-size:.65rem;font-weight:500;color:var(--muted)}.bp-row .bp-steps,.bp-row .bp-done{padding:0 10px 8px}
@@ -3078,7 +3078,7 @@ Finished: us 5th Gold · them still alive">L 7–8</button></span></span>
 </section>
 
 
-<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Thu, Oct 15, 5:05 PM</time></span><span class="next-chk" hidden> · Next check <time data-next></time></span> · <a href="team/">Team login</a></footer>
+<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Thu, Oct 15, 5:09 PM</time></span><span class="next-chk" hidden> · Next check <time data-next></time></span> · <a href="team/">Team login</a></footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
 <script>
@@ -3303,7 +3303,7 @@ if (location.protocol === 'https:' && 'serviceWorker' in navigator) navigator.se
 (() => {
   if (location.protocol !== 'https:') return;
   const off = document.createElement('div'); off.className = 'offline-note'; off.setAttribute('role', 'status');
-  off.textContent = "You're offline — showing info saved " + "Thu, Oct 15, 5:05 PM";
+  off.textContent = "You're offline — showing info saved " + "Thu, Oct 15, 5:09 PM";
   document.body.prepend(off);
   const sync = () => { off.hidden = navigator.onLine; }; sync();
   addEventListener('online', sync); addEventListener('offline', sync);
