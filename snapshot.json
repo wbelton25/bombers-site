@@ -90,9 +90,9 @@
    "date": "10/17/2026",
    "name": "PINK MONEY BALL--BACKPACK CHAMPIONSHIPS-PINK HATS TO ALL TEAMS ENTERED",
    "won": 1,
-   "lost": 0,
-   "rs": 10,
-   "ra": 3,
+   "lost": 1,
+   "rs": 12,
+   "ra": 7,
    "finish": "",
    "points": "0"
   }
@@ -423,9 +423,9 @@
      "time": "12:15 PM",
      "field": "Nevins:Field 2",
      "opp": "🕷️CoulOak Black Widows - Deko🕷️",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "2",
+     "them": "4",
+     "result": "L"
     }
    ],
    "finish": null
