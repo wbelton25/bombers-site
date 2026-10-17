@@ -89,10 +89,10 @@
   {
    "date": "10/17/2026",
    "name": "PINK MONEY BALL--BACKPACK CHAMPIONSHIPS-PINK HATS TO ALL TEAMS ENTERED",
-   "won": 0,
+   "won": 1,
    "lost": 0,
-   "rs": 0,
-   "ra": 0,
+   "rs": 8,
+   "ra": 5,
    "finish": "",
    "points": "0"
   }
@@ -411,9 +411,9 @@
      "time": "8:30 AM",
      "field": "Nevins:Field 4",
      "opp": "⚡️Carolina Lightning 10U Purple⚡️",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "8",
+     "them": "5",
+     "result": "W"
     },
     {
      "key": "12821|Pool Play|10",
