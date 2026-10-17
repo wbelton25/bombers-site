@@ -90,9 +90,9 @@
    "date": "10/17/2026",
    "name": "PINK MONEY BALL--BACKPACK CHAMPIONSHIPS-PINK HATS TO ALL TEAMS ENTERED",
    "won": 1,
-   "lost": 1,
-   "rs": 12,
-   "ra": 7,
+   "lost": 2,
+   "rs": 18,
+   "ra": 15,
    "finish": "",
    "points": "0"
   }
@@ -435,12 +435,12 @@
      "time": "3:00 PM",
      "field": "Nevins:Field 1",
      "opp": "NC Valkyries Fastpitch Softball",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "6",
+     "them": "8",
+     "result": "L"
     }
    ],
-   "finish": null
+   "finish": "5th · Gold"
   }
  }
 }
