@@ -426,6 +426,18 @@
      "us": "2",
      "them": "4",
      "result": "L"
+    },
+    {
+     "key": "12821|Gold Bracket|1",
+     "section": "Gold Bracket",
+     "no": "1",
+     "day": "Sat",
+     "time": "3:00 PM",
+     "field": "Nevins:Field 1",
+     "opp": "NC Valkyries Fastpitch Softball",
+     "us": "",
+     "them": "",
+     "result": ""
     }
    ],
    "finish": null
