@@ -31,6 +31,12 @@
    "name": "Big Pink Out Weekend · Big Pink Chains, Pink Bag Tags, Pink Prizes",
    "finish": "",
    "points": "0"
+  },
+  {
+   "date": "10/17/2026",
+   "name": "Pink Money Ball · Backpack Championships-Pink Hats to All Teams Entered",
+   "finish": "",
+   "points": "0"
   }
  ],
  "summary": [
@@ -73,6 +79,16 @@
   {
    "date": "10/10/2026",
    "name": "BIG PINK OUT WEEKEND-----BIG PINK CHAINS, PINK BAG TAGS, PINK PRIZES",
+   "won": 0,
+   "lost": 0,
+   "rs": 0,
+   "ra": 0,
+   "finish": "",
+   "points": "0"
+  },
+  {
+   "date": "10/17/2026",
+   "name": "PINK MONEY BALL--BACKPACK CHAMPIONSHIPS-PINK HATS TO ALL TEAMS ENTERED",
    "won": 0,
    "lost": 0,
    "rs": 0,
