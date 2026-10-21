@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:trn-12821@bombers.beltonglobal.com
-DTSTAMP:20261021T110040Z
+DTSTAMP:20261021T120046Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Bombers: Pink Money Ball · Backpack Championships-Pink Hats to Al
@@ -20,7 +20,7 @@ DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
 END:VEVENT
 BEGIN:VEVENT
 UID:trn-12822@bombers.beltonglobal.com
-DTSTAMP:20261021T110040Z
+DTSTAMP:20261021T120046Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Bombers: Halloween Havoc · Monster Mash Championships with Monste
@@ -31,7 +31,7 @@ DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
 END:VEVENT
 BEGIN:VEVENT
 UID:trn-12418@bombers.beltonglobal.com
-DTSTAMP:20261021T110040Z
+DTSTAMP:20261021T120046Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261116
 SUMMARY:Bombers: Winter (Turf) National Championships
