@@ -8,7 +8,9 @@
   {
    "id": 12822,
    "start": "2026-10-24",
-   "end": "2026-10-24"
+   "end": "2026-10-24",
+   "firstGame": 510,
+   "lastGame": 1170
   },
   {
    "id": 12418,
@@ -16,10 +18,10 @@
    "end": "2026-11-15"
   }
  ],
- "publicHash": "d42737634b38be8a",
- "teamHash": "c6fbf23a0fee6070",
+ "publicHash": "4fe9500aee7b08d2",
+ "teamHash": "c96dad3742bf1bc3",
  "teamsnap": "dc43ac2b3a16985e",
  "teamsnapAt": "2026-10-19T02:00:41.608Z",
- "topgunHash": "3578701bdccaae5f",
- "topgunAt": "2026-10-21T18:00:37.741Z"
+ "topgunHash": "f3f68e172cdc3d00",
+ "topgunAt": "2026-10-22T00:00:33.193Z"
 }

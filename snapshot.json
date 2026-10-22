@@ -446,7 +446,32 @@
   "12822": {
    "name": "Halloween Havoc · Monster Mash Championships with Monster Mash Rings",
    "start": "2026-10-24",
-   "games": [],
+   "games": [
+    {
+     "key": "12822|Pool Play|9",
+     "section": "Pool Play",
+     "no": "9",
+     "day": "Sat",
+     "time": "9:45 AM",
+     "field": "RRC:Field 4",
+     "opp": "OutKasts",
+     "us": "",
+     "them": "",
+     "result": ""
+    },
+    {
+     "key": "12822|Pool Play|21",
+     "section": "Pool Play",
+     "no": "21",
+     "day": "Sat",
+     "time": "1:30 PM",
+     "field": "RRC:Field 2",
+     "opp": "Mambas Vardo",
+     "us": "",
+     "them": "",
+     "result": ""
+    }
+   ],
    "finish": null
   }
  }
