@@ -486,6 +486,18 @@
      "us": "5",
      "them": "4",
      "result": "W"
+    },
+    {
+     "key": "12822|Silver Bracket|3",
+     "section": "Silver Bracket",
+     "no": "3",
+     "day": "Sat",
+     "time": "6:00 PM",
+     "field": "RRC:Field 2",
+     "opp": "Winner Game #5",
+     "us": "",
+     "them": "",
+     "result": ""
     }
    ],
    "finish": null
