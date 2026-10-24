@@ -105,10 +105,10 @@
   {
    "date": "10/24/2026",
    "name": "HALLOWEEN HAVOC----MONSTER MASH CHAMPIONSHIPS WITH MONSTER MASH RINGS",
-   "won": 0,
+   "won": 1,
    "lost": 0,
-   "rs": 0,
-   "ra": 0,
+   "rs": 9,
+   "ra": 3,
    "finish": "",
    "points": "0"
   }
@@ -471,9 +471,9 @@
      "time": "9:45 AM",
      "field": "RRC:Field 4",
      "opp": "OutKasts",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "9",
+     "them": "3",
+     "result": "W"
     },
     {
      "key": "12822|Pool Play|21",
