@@ -105,10 +105,10 @@
   {
    "date": "10/24/2026",
    "name": "HALLOWEEN HAVOC----MONSTER MASH CHAMPIONSHIPS WITH MONSTER MASH RINGS",
-   "won": 1,
+   "won": 2,
    "lost": 0,
-   "rs": 9,
-   "ra": 3,
+   "rs": 14,
+   "ra": 7,
    "finish": "",
    "points": "0"
   }
@@ -483,9 +483,9 @@
      "time": "1:30 PM",
      "field": "RRC:Field 2",
      "opp": "Mambas Vardo",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "5",
+     "them": "4",
+     "result": "W"
     }
    ],
    "finish": null
