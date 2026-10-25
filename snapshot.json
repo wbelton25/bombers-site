@@ -106,9 +106,9 @@
    "date": "10/24/2026",
    "name": "HALLOWEEN HAVOC----MONSTER MASH CHAMPIONSHIPS WITH MONSTER MASH RINGS",
    "won": 2,
-   "lost": 0,
-   "rs": 14,
-   "ra": 7,
+   "lost": 1,
+   "rs": 19,
+   "ra": 14,
    "finish": "",
    "points": "0"
   }
@@ -495,12 +495,12 @@
      "time": "6:00 PM",
      "field": "RRC:Field 2",
      "opp": "Lexington Flying Pigs Elite Young",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "5",
+     "them": "7",
+     "result": "L"
     }
    ],
-   "finish": null
+   "finish": "3rd · Silver"
   }
  }
 }
