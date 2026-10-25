@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:trn-12821@bombers.beltonglobal.com
-DTSTAMP:20261025T030043Z
+DTSTAMP:20261025T040153Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Bombers: Pink Money Ball · Backpack Championships-Pink Hats to Al
@@ -19,41 +19,19 @@ DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
  imesResults.aspx?trnid=12821
 END:VEVENT
 BEGIN:VEVENT
-UID:game-12822-poolplay-9@bombers.beltonglobal.com
-DTSTAMP:20261025T030043Z
-DTSTART:20261024T134500Z
-DTEND:20261024T150000Z
-SUMMARY:Bombers vs OutKasts (W 9–3)
-LOCATION:Rocky River Complex\, 5454 Rocky River Rd. Concord\, NC 28025
-DESCRIPTION:Halloween Havoc · Monster Mash Championships with Monster Mas
- h Rings · Pool Play\nField: RRC · Field 4\nhttps://playtopgunsports.com
- /GameTimesResults.aspx?trnid=12822
-END:VEVENT
-BEGIN:VEVENT
-UID:game-12822-poolplay-21@bombers.beltonglobal.com
-DTSTAMP:20261025T030043Z
-DTSTART:20261024T173000Z
-DTEND:20261024T184500Z
-SUMMARY:Bombers vs Mambas Vardo (W 5–4)
-LOCATION:Rocky River Complex\, 5454 Rocky River Rd. Concord\, NC 28025
-DESCRIPTION:Halloween Havoc · Monster Mash Championships with Monster Mas
- h Rings · Pool Play\nField: RRC · Field 2\nhttps://playtopgunsports.com
- /GameTimesResults.aspx?trnid=12822
-END:VEVENT
-BEGIN:VEVENT
-UID:game-12822-silverbracket-3@bombers.beltonglobal.com
-DTSTAMP:20261025T030043Z
-DTSTART:20261024T220000Z
-DTEND:20261024T231500Z
-SUMMARY:Bombers vs Lexington Flying Pigs Elite Young (L 5–7)
-LOCATION:Rocky River Complex\, 5454 Rocky River Rd. Concord\, NC 28025
-DESCRIPTION:Halloween Havoc · Monster Mash Championships with Monster Mas
- h Rings · Silver Bracket\nField: RRC · Field 2\nhttps://playtopgunsport
- s.com/GameTimesResults.aspx?trnid=12822
+UID:trn-12822@bombers.beltonglobal.com
+DTSTAMP:20261025T040153Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Bombers: Halloween Havoc · Monster Mash Championships with Monste
+ r Mash Rings
+LOCATION:Concord-Charlotte-Huntersville\, NC
+DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
+ imesResults.aspx?trnid=12822
 END:VEVENT
 BEGIN:VEVENT
 UID:trn-12418@bombers.beltonglobal.com
-DTSTAMP:20261025T030043Z
+DTSTAMP:20261025T040153Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261116
 SUMMARY:Bombers: Winter (Turf) National Championships

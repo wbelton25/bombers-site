@@ -232,6 +232,12 @@
   }
  ],
  "events": {
+  "12418": {
+   "name": "Winter (Turf) National Championships",
+   "start": "2026-11-13",
+   "games": [],
+   "finish": null
+  },
   "12813": {
    "name": "Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs",
    "start": "2026-08-22",
