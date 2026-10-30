@@ -6,15 +6,20 @@
    "end": "2026-10-24"
   },
   {
+   "id": 12825,
+   "start": "2026-11-07",
+   "end": "2026-11-07"
+  },
+  {
    "id": 12418,
    "start": "2026-11-13",
    "end": "2026-11-15"
   }
  ],
- "publicHash": "c1ad16542f12fe8f",
- "teamHash": "cd58ad2be54e8044",
+ "publicHash": "6da42f3a9b4adc54",
+ "teamHash": "3d4dfe8df2b5bede",
  "teamsnap": "dc43ac2b3a16985e",
  "teamsnapAt": "2026-10-19T02:00:41.608Z",
- "topgunHash": "c6d80f5450fddaf7",
- "topgunAt": "2026-10-29T23:00:34.053Z"
+ "topgunHash": "c96de9fd65562c05",
+ "topgunAt": "2026-10-30T20:01:32.749Z"
 }
