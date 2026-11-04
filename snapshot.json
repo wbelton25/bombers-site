@@ -164,10 +164,23 @@
     "iNNOVATIVE Intensity - Burgess"
    ],
    "notes": [
+    "SPECATATOR GATE FEES will be collected at the following gates:",
+    "Rocky River Sports Complex",
+    "Bradford Park",
+    "Cherry Park",
+    "Salisbury Community Park",
+    "Nevins Park",
+    "GATES ARE CASH ONLY!!! NO CREDIT CARDS",
+    "ADULTS: 12.00 for ages 13 and up",
+    "CHILD: 10.00 for ages 7 to 12",
+    "Ferguson Park and Hargett Park---Teams will need to login to your team account and pay the upfront gate fee as we are unable to charge at the park at these venues.",
+    "MUST BE PAID BY THURSDAY @ 5:00pm",
+    "Ferguson Park--12u OPEN Teams",
+    "Hargett Park--16u Teams",
+    "I also want to remind you that this is a YOUTH SPORTING EVENT and no unsportsmanlike behavior will be tolerated. This includes Unsportsmanlike Conduct, PROFANITY, Fighting, Abuse of Staff or UMPIRES or the use of Alcohol. Anyone who violates these rules will be removed from the facility and will not be allowed to return and could be banned from participating in future events.",
     "GHOST BAT WINTER NATIONAL CHAMPIONSHIPS",
-    "TOP GUN-USA GAME CHANGER STATS WILL BE QUALIFYING PLAYERS THIS WEEKEND TO THE ALL-AMERICAN TOP (100) SKILLS PROSPECT COMBINE",
     "ALL WINNING TEAMS IN ALL AGES ALL BRACKETS WILL RECEIVE A GHOST BAT WITH A RETAIL VALUE OF $500.00\"",
-    "THIS EVENT WILL HAVE GAMES AT CHERRY PARK IN ROCK HILL SOUTH CAROLINA, ROCKY RIVER SPORTS COMPLEX, NEVINS SPORTS PARK, BRADFORD SPORTS COMPLEX, AND SALISBURY COMMUNITY PARK\"",
+    "THIS EVENT WILL HAVE GAMES AT CHERRY PARK AND HARGETT PARK IN ROCK HILL SOUTH CAROLINA, ROCKY RIVER SPORTS COMPLEX, FERGUSON PARK IN GASTONIA, NC NEVINS SPORTS PARK, BRADFORD SPORTS COMPLEX, AND SALISBURY COMMUNITY PARK\"",
     "ALL TEAMS ENTERD WILL RECEIVE (12) TOP GUN-USA CUSTOM MADE NATIONAL CHAMPIONSHIIP BAG TAGS FOR THIS SPECIAL EVENT\"",
     "ALL WINNING TEAMS IN ALL AGES ALL BRACKETS WILL RECEIVE (12) TOP GUN-USA CUSTOM MADE NATIONAL CHAMPIONSHIPS JUMBO RINGS PLUS NATIONAL CHAMPIONSHIPS BANNERS\"",
     "ONLY AT TOP GUN-USA SPORTS, THE NUMBER #1 BRAND OF SOFTBALL IN THE CAROLINA'S\""
@@ -471,7 +484,32 @@
   "12825": {
    "name": "Ghost Bat Winter Nationals · New Venue Added Cherry Park-Rockhill Sc",
    "start": "2026-11-07",
-   "games": [],
+   "games": [
+    {
+     "key": "12825|Pool Play|3",
+     "section": "Pool Play",
+     "no": "3",
+     "day": "Sat",
+     "time": "8:30 AM",
+     "field": "Cherry P:Field # 3",
+     "opp": "Carolina Hurricanes- Ford",
+     "us": "",
+     "them": "",
+     "result": ""
+    },
+    {
+     "key": "12825|Pool Play|18",
+     "section": "Pool Play",
+     "no": "18",
+     "day": "Sat",
+     "time": "12:15 PM",
+     "field": "Cherry P:Field # 3",
+     "opp": "5G Prime",
+     "us": "",
+     "them": "",
+     "result": ""
+    }
+   ],
    "finish": null
   }
  }
