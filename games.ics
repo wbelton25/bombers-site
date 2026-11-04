@@ -8,19 +8,30 @@ X-WR-TIMEZONE:America/New_York
 REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:trn-12825@bombers.beltonglobal.com
-DTSTAMP:20261104T213219Z
-DTSTART;VALUE=DATE:20261107
-DTEND;VALUE=DATE:20261108
-SUMMARY:Bombers: Ghost Bat Winter Nationals · New Venue Added Cherry Park
- -Rockhill Sc
-LOCATION:Concord-Charlotte-Huntersville\, NC
-DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
- imesResults.aspx?trnid=12825
+UID:game-12825-poolplay-3@bombers.beltonglobal.com
+DTSTAMP:20261104T220807Z
+DTSTART:20261107T133000Z
+DTEND:20261107T144500Z
+SUMMARY:Bombers vs Carolina Hurricanes- Ford
+LOCATION:Cherry Park\, 1466 North Cherry Rd. Rock Hill\, SC 29732
+DESCRIPTION:Ghost Bat Winter Nationals · New Venue Added Cherry Park-Rock
+ hill Sc · Pool Play\nField: Cherry P · Field # 3\nhttps://playtopgunspo
+ rts.com/GameTimesResults.aspx?trnid=12825
+END:VEVENT
+BEGIN:VEVENT
+UID:game-12825-poolplay-18@bombers.beltonglobal.com
+DTSTAMP:20261104T220807Z
+DTSTART:20261107T171500Z
+DTEND:20261107T183000Z
+SUMMARY:Bombers vs 5G Prime
+LOCATION:Cherry Park\, 1466 North Cherry Rd. Rock Hill\, SC 29732
+DESCRIPTION:Ghost Bat Winter Nationals · New Venue Added Cherry Park-Rock
+ hill Sc · Pool Play\nField: Cherry P · Field # 3\nhttps://playtopgunspo
+ rts.com/GameTimesResults.aspx?trnid=12825
 END:VEVENT
 BEGIN:VEVENT
 UID:trn-12418@bombers.beltonglobal.com
-DTSTAMP:20261104T213219Z
+DTSTAMP:20261104T220807Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261116
 SUMMARY:Bombers: Winter (Turf) National Championships
