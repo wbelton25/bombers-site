@@ -484,32 +484,7 @@
   "12825": {
    "name": "Ghost Bat Winter Nationals · New Venue Added Cherry Park-Rockhill Sc",
    "start": "2026-11-07",
-   "games": [
-    {
-     "key": "12825|Pool Play|3",
-     "section": "Pool Play",
-     "no": "3",
-     "day": "Sat",
-     "time": "8:30 AM",
-     "field": "Cherry P:Field # 3",
-     "opp": "Carolina Hurricanes- Ford",
-     "us": "",
-     "them": "",
-     "result": ""
-    },
-    {
-     "key": "12825|Pool Play|18",
-     "section": "Pool Play",
-     "no": "18",
-     "day": "Sat",
-     "time": "12:15 PM",
-     "field": "Cherry P:Field # 3",
-     "opp": "5G Prime",
-     "us": "",
-     "them": "",
-     "result": ""
-    }
-   ],
+   "games": [],
    "finish": null
   }
  }
