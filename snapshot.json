@@ -512,6 +512,18 @@
      "us": "14",
      "them": "2",
      "result": "W"
+    },
+    {
+     "key": "12825|Gold Bracket|3",
+     "section": "Gold Bracket",
+     "no": "3",
+     "day": "Sat",
+     "time": "6:00 PM",
+     "field": "Cherry P:Field # 3",
+     "opp": "Winner Game #1",
+     "us": "",
+     "them": "",
+     "result": ""
     }
    ],
    "finish": null
