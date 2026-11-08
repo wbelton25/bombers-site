@@ -122,9 +122,9 @@
    "date": "11/07/2026",
    "name": "GHOST BAT WINTER NATIONALS--NEW VENUE ADDED CHERRY PARK-ROCKHILL SC",
    "won": 2,
-   "lost": 0,
-   "rs": 33,
-   "ra": 2,
+   "lost": 1,
+   "rs": 34,
+   "ra": 10,
    "finish": "",
    "points": "0"
   }
@@ -521,12 +521,12 @@
      "time": "6:00 PM",
      "field": "Cherry P:Field # 3",
      "opp": "FP Elite 10U",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "1",
+     "them": "8",
+     "result": "L"
     }
    ],
-   "finish": null
+   "finish": "3rd · Gold"
   }
  }
 }
