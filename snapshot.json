@@ -1,6 +1,6 @@
 {
- "points": "1,850",
- "rank": "22 of 95",
+ "points": "3,300",
+ "rank": "3 of 95",
  "official": [
   {
    "date": "08/22/2026",
@@ -47,8 +47,8 @@
   {
    "date": "11/07/2026",
    "name": "Ghost Bat Winter Nationals · New Venue Added Cherry Park-Rockhill Sc",
-   "finish": "",
-   "points": "0"
+   "finish": "3rd (Gold)",
+   "points": "1450"
   }
  ],
  "summary": [
@@ -125,8 +125,8 @@
    "lost": 1,
    "rs": 34,
    "ra": 10,
-   "finish": "",
-   "points": "0"
+   "finish": "3rd (Gold)",
+   "points": "1450"
   }
  ],
  "entries": [
@@ -208,7 +208,10 @@
     "Weddington Royals Knight"
    ],
    "notes": [
-    "THIS EVENT IS SOLD OUT AD NOW FULL TO CAPACITY",
+    "Gates open 1 HOUR prior to 1st game start time.",
+    "SPECTATOR GATES FEES are Cash only Daily",
+    "$12.00 per Adult ages 13 and up",
+    "$10.00 per Child ages 7 to 12",
     "CLICK HERE for DISCOUNTED HOTELS",
     "CLICK HERE for 2026 Shipyard Park Rules"
    ]
@@ -218,7 +221,44 @@
   "12418": {
    "name": "Winter (Turf) National Championships",
    "start": "2026-11-13",
-   "games": [],
+   "games": [
+    {
+     "key": "12418|Pool Play|3",
+     "section": "Pool Play",
+     "no": "3",
+     "day": "Fri",
+     "time": "5:30 PM",
+     "field": "Shipyard:Shipyard Stewart",
+     "opp": "Team North Carolina Tejeda",
+     "us": "",
+     "them": "",
+     "result": ""
+    },
+    {
+     "key": "12418|Pool Play|6",
+     "section": "Pool Play",
+     "no": "6",
+     "day": "Sat",
+     "time": "10:30 AM",
+     "field": "Shipyard:Shipyard Starboard",
+     "opp": "Carolina Wombats 10U- Gray",
+     "us": "",
+     "them": "",
+     "result": ""
+    },
+    {
+     "key": "12418|Pool Play|8",
+     "section": "Pool Play",
+     "no": "8",
+     "day": "Sat",
+     "time": "1:30 PM",
+     "field": "Shipyard:Shipyard Starboard",
+     "opp": "Weddington Royals Knight",
+     "us": "",
+     "them": "",
+     "result": ""
+    }
+   ],
    "finish": null
   },
   "12813": {
