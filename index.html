@@ -230,6 +230,7 @@ html.dark .cancel-banner{background:#3a1717;border-color:#7a2e2e;color:#f5c2c2}
 .gt-p{font-size:.78rem;font-weight:600}.gt-p i{font-style:normal;font-size:.62rem;color:var(--muted)}.gt-g.us td,.gt-m.us td{background:color-mix(in srgb,var(--hi) 10%,transparent)}.gt-m td{padding:0 4px 7px;text-align:center;font-size:.74rem;color:var(--hi)}.gt-m.us td{color:var(--ink)}
 .gm-m{display:block;margin-top:3px;font-size:.74rem;color:var(--hi)}.gm-m.us{color:var(--ink)}.gm-tree{margin-top:8px}.gm-tree>summary,.od-more>summary{cursor:pointer;font-weight:600;color:var(--hi);font-size:.88rem}.od-more{margin-top:6px}.od-if{opacity:.85}.od-done{margin:4px 0 0}
 .scout-vs{margin:6px 0 2px}
+.adm-btn{font:inherit;font-size:.8rem;font-weight:600;padding:5px 10px;border-radius:99px;border:1px solid var(--hi);background:var(--card);color:var(--hi);cursor:pointer}.adm-btn:disabled{opacity:.6}.adm-msg{font-size:.78rem}
 .lv-tag{display:flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;color:var(--hi);margin:12px 0 2px;text-transform:uppercase;letter-spacing:.04em}.lv-dot{width:8px;height:8px;border-radius:50%;background:#d9453b;animation:lvp 1.6s infinite}@keyframes lvp{50%{opacity:.3}}
 .lv-ref{margin-top:14px}.lv-more{border-bottom:1px solid var(--line)}.lv-more>summary{cursor:pointer;padding:12px 2px;font-weight:600}.lv-body{padding-bottom:10px}
 .lo-list{padding:0;margin:4px 0 8px}.lo-list li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--line)}.lo-list li:first-child{border-top:0}.lo-k{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:6.5em}.lo-k small{font-size:.72rem}.lo-v{flex:1;font-size:.88rem}
@@ -3401,7 +3402,7 @@ Finished: us 2nd Silver · them 3rd Silver">W 14–1</button></span></span>
 </section>
 
 
-<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Sun, Nov 8, 6:51 PM</time></span><span class="next-chk" hidden> · Next check <time data-next></time></span> · <a href="team/">Team login</a></footer>
+<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Sun, Nov 8, 7:05 PM</time></span><span class="next-chk" hidden> · Next check <time data-next></time></span> · <a href="team/">Team login</a></footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a><a href="#rankings" data-view-link="rankings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg><span>Rankings</span></a></nav>
 <script>
@@ -3453,6 +3454,7 @@ function showView(v) {
     document.querySelectorAll('.next-chk').forEach(el => { el.hidden = false; });
   });
 })();
+
 // When the next Top Gun check should happen — mirrors gate.js: daily (20 h), every 3 h from a week out while the
 // schedule isn't posted, every ~50 min from 3 days before a tournament, every tick during games, and right after midnight once a tournament has ended.
 function nextCheck(last, events, now) {
@@ -3634,7 +3636,7 @@ if (location.protocol === 'https:' && 'serviceWorker' in navigator) navigator.se
 (() => {
   if (location.protocol !== 'https:') return;
   const off = document.createElement('div'); off.className = 'offline-note'; off.setAttribute('role', 'status');
-  off.textContent = "You're offline — showing info saved " + "Sun, Nov 8, 6:51 PM";
+  off.textContent = "You're offline — showing info saved " + "Sun, Nov 8, 7:05 PM";
   document.body.prepend(off);
   const sync = () => { off.hidden = navigator.onLine; }; sync();
   addEventListener('online', sync); addEventListener('offline', sync);
