@@ -49,6 +49,12 @@
    "name": "Ghost Bat Winter Nationals · New Venue Added Cherry Park-Rockhill Sc",
    "finish": "3rd (Gold)",
    "points": "1450"
+  },
+  {
+   "date": "11/13/2026",
+   "name": "Sold Out · Enter Now As the 2027 Schedule Is Now Posted",
+   "finish": "",
+   "points": "0"
   }
  ],
  "summary": [
@@ -127,6 +133,16 @@
    "ra": 10,
    "finish": "3rd (Gold)",
    "points": "1450"
+  },
+  {
+   "date": "11/13/2026",
+   "name": "SOLD OUT---ENTER NOW AS THE 2027 SCHEDULE IS NOW POSTED",
+   "won": 0,
+   "lost": 0,
+   "rs": 0,
+   "ra": 0,
+   "finish": "",
+   "points": "0"
   }
  ],
  "entries": [
