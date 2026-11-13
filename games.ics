@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:trn-12825@bombers.beltonglobal.com
-DTSTAMP:20261113T142331Z
+DTSTAMP:20261113T143334Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Bombers: Ghost Bat Winter Nationals · New Venue Added Cherry Park
@@ -20,7 +20,7 @@ DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
 END:VEVENT
 BEGIN:VEVENT
 UID:game-12418-poolplay-3@bombers.beltonglobal.com
-DTSTAMP:20261113T142331Z
+DTSTAMP:20261113T143334Z
 DTSTART:20261113T223000Z
 DTEND:20261113T234500Z
 SUMMARY:Bombers vs Team North Carolina Tejeda
@@ -31,7 +31,7 @@ DESCRIPTION:Winter (Turf) National Championships · Pool Play\nField: Ship
 END:VEVENT
 BEGIN:VEVENT
 UID:game-12418-poolplay-6@bombers.beltonglobal.com
-DTSTAMP:20261113T142331Z
+DTSTAMP:20261113T143334Z
 DTSTART:20261114T153000Z
 DTEND:20261114T164500Z
 SUMMARY:Bombers vs Carolina Wombats 10U- Gray
@@ -42,7 +42,7 @@ DESCRIPTION:Winter (Turf) National Championships · Pool Play\nField: Ship
 END:VEVENT
 BEGIN:VEVENT
 UID:game-12418-poolplay-8@bombers.beltonglobal.com
-DTSTAMP:20261113T142331Z
+DTSTAMP:20261113T143334Z
 DTSTART:20261114T183000Z
 DTEND:20261114T194500Z
 SUMMARY:Bombers vs Weddington Royals Knight
@@ -50,5 +50,15 @@ LOCATION:Shipyard Park\, 2383 HWY 41 Mt. Pleasant\, SC 29466
 DESCRIPTION:Winter (Turf) National Championships · Pool Play\nField: Ship
  yard · Shipyard Starboard\nhttps://playtopgunsports.com/GameTimesResults
  .aspx?trnid=12418
+END:VEVENT
+BEGIN:VEVENT
+UID:trn-13747@bombers.beltonglobal.com
+DTSTAMP:20261113T143334Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:Bombers: Spring (TOC) Tournament of Champions · Free Paid Berths
+LOCATION:Rock Hill\, SC
+DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
+ imesResults.aspx?trnid=13747
 END:VEVENT
 END:VCALENDAR

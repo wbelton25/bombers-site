@@ -11,12 +11,17 @@
    "end": "2026-11-15",
    "firstGame": 480,
    "lastGame": 1050
+  },
+  {
+   "id": 13747,
+   "start": "2027-04-24",
+   "end": "2027-04-24"
   }
  ],
- "publicHash": "4b3c549337b8aee9",
- "teamHash": "257b1161f467baf7",
+ "publicHash": "ee771f8ada503239",
+ "teamHash": "088be6101306f320",
  "teamsnap": "0e0baafc99021ac2",
  "teamsnapAt": "2026-11-12T21:00:37.444Z",
- "topgunHash": "bce09f8645af411d",
- "topgunAt": "2026-11-13T06:00:35.131Z"
+ "topgunHash": "0c74d2ad77f57521",
+ "topgunAt": "2026-11-13T14:33:33.246Z"
 }
