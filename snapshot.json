@@ -138,9 +138,9 @@
    "date": "11/13/2026",
    "name": "SOLD OUT---ENTER NOW AS THE 2027 SCHEDULE IS NOW POSTED",
    "won": 0,
-   "lost": 2,
-   "rs": 5,
-   "ra": 16,
+   "lost": 3,
+   "rs": 6,
+   "ra": 27,
    "finish": "",
    "points": "0"
   }
@@ -320,9 +320,9 @@
      "time": "1:30 PM",
      "field": "Shipyard:Shipyard Starboard",
      "opp": "Weddington Royals Knight",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "1",
+     "them": "11",
+     "result": "L"
     }
    ],
    "finish": null
