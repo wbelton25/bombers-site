@@ -138,9 +138,9 @@
    "date": "11/13/2026",
    "name": "SOLD OUT---ENTER NOW AS THE 2027 SCHEDULE IS NOW POSTED",
    "won": 0,
-   "lost": 1,
-   "rs": 2,
-   "ra": 10,
+   "lost": 2,
+   "rs": 5,
+   "ra": 16,
    "finish": "",
    "points": "0"
   }
@@ -308,9 +308,9 @@
      "time": "10:30 AM",
      "field": "Shipyard:Shipyard Starboard",
      "opp": "Carolina Wombats 10U- Gray",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "3",
+     "them": "6",
+     "result": "L"
     },
     {
      "key": "12418|Pool Play|8",
