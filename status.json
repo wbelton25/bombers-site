@@ -18,10 +18,114 @@
    "end": "2027-04-24"
   }
  ],
- "publicHash": "6d99b89fdb4c5a7d",
- "teamHash": "b7f21ec7f6807c9c",
+ "watch": [
+  {
+   "k": "12418|Pool Play|1",
+   "ts": 1794600000000,
+   "ids": [
+    "f98WAvwXVVnk",
+    "5AJkDcwJR6kO"
+   ]
+  },
+  {
+   "k": "12418|Pool Play|2",
+   "ts": 1794604500000,
+   "ids": [
+    "OQzZqDs1aBou",
+    "uOxWA0m9RwjO"
+   ]
+  },
+  {
+   "k": "12418|Pool Play|3",
+   "ts": 1794609000000,
+   "ids": [
+    "1VARQnkH9OuK",
+    "EM6nl5ufzc3X"
+   ]
+  },
+  {
+   "k": "12418|Pool Play|4",
+   "ts": 1794661200000,
+   "ids": [
+    "f98WAvwXVVnk",
+    "OQzZqDs1aBou"
+   ]
+  },
+  {
+   "k": "12418|Pool Play|5",
+   "ts": 1794665700000,
+   "ids": [
+    "5AJkDcwJR6kO",
+    "EM6nl5ufzc3X"
+   ]
+  },
+  {
+   "k": "12418|Pool Play|6",
+   "ts": 1794670200000,
+   "ids": [
+    "1VARQnkH9OuK",
+    "uOxWA0m9RwjO"
+   ]
+  },
+  {
+   "k": "12418|Pool Play|7",
+   "ts": 1794674700000,
+   "ids": [
+    "5AJkDcwJR6kO",
+    "OQzZqDs1aBou"
+   ]
+  },
+  {
+   "k": "12418|Pool Play|8",
+   "ts": 1794681000000,
+   "ids": [
+    "f98WAvwXVVnk",
+    "1VARQnkH9OuK"
+   ]
+  },
+  {
+   "k": "12418|Pool Play|9",
+   "ts": 1794685500000,
+   "ids": [
+    "EM6nl5ufzc3X",
+    "uOxWA0m9RwjO"
+   ]
+  },
+  {
+   "k": "12418|Gold Bracket|1",
+   "ts": 1794763800000,
+   "ids": [
+    "OQzZqDs1aBou",
+    "f98WAvwXVVnk"
+   ]
+  },
+  {
+   "k": "12418|Gold Bracket|2",
+   "ts": 1794774600000,
+   "ids": [
+    "EM6nl5ufzc3X"
+   ]
+  },
+  {
+   "k": "12418|Silver Bracket|1",
+   "ts": 1794758400000,
+   "ids": [
+    "5AJkDcwJR6kO",
+    "1VARQnkH9OuK"
+   ]
+  },
+  {
+   "k": "12418|Silver Bracket|2",
+   "ts": 1794769200000,
+   "ids": [
+    "uOxWA0m9RwjO"
+   ]
+  }
+ ],
+ "publicHash": "30cb94c779cab93a",
+ "teamHash": "28f0e78188fe56c7",
  "teamsnap": "0e0baafc99021ac2",
  "teamsnapAt": "2026-11-12T21:00:37.444Z",
- "topgunHash": "87d5de7f2e9a7296",
- "topgunAt": "2026-11-14T19:13:29.017Z"
+ "topgunHash": "a53625cf19f33c17",
+ "topgunAt": "2026-11-14T19:59:26.839Z"
 }

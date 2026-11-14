@@ -323,6 +323,18 @@
      "us": "1",
      "them": "11",
      "result": "L"
+    },
+    {
+     "key": "12418|Silver Bracket|1",
+     "section": "Silver Bracket",
+     "no": "1",
+     "day": "Sun",
+     "time": "11:00 AM",
+     "field": "Shipyard:Shipyard Stewart",
+     "opp": "Carolina Freedom",
+     "us": "",
+     "them": "",
+     "result": ""
     }
    ],
    "finish": null
