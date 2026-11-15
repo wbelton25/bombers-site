@@ -345,12 +345,12 @@
      "time": "11:00 AM",
      "field": "Shipyard:Shipyard Stewart",
      "opp": "Carolina Freedom",
-     "us": "",
-     "them": "",
-     "result": ""
+     "us": "3",
+     "them": "5",
+     "result": "L"
     }
    ],
-   "finish": null
+   "finish": "3rd · Silver"
   },
   "12813": {
    "name": "Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs",
