@@ -240,6 +240,7 @@ html.dark .cancel-banner{background:#3a1717;border-color:#7a2e2e;color:#f5c2c2}
 .gm-m{display:block;margin-top:3px;font-size:.74rem;color:var(--hi)}.gm-m.us{color:var(--ink)}.gm-tree{margin-top:8px}.gm-tree>summary,.od-more>summary{cursor:pointer;font-weight:600;color:var(--hi);font-size:.88rem}.od-more{margin-top:6px}.od-if{opacity:.85}.od-done{margin:4px 0 0}
 .scout-vs{margin:6px 0 2px}
 .adm-btn{font:inherit;font-size:.8rem;font-weight:600;padding:5px 10px;border-radius:99px;border:1px solid var(--hi);background:var(--card);color:var(--hi);cursor:pointer}.adm-btn:disabled{opacity:.6}.adm-msg{font-size:.78rem}
+.lv-pill{position:fixed;right:12px;bottom:calc(78px + env(safe-area-inset-bottom));z-index:40;font:inherit;font-size:.82rem;font-weight:700;color:#fff;background:#d9453b;border:0;border-radius:99px;padding:8px 14px;box-shadow:0 2px 10px #0005;cursor:pointer}.lv-pill[disabled]{opacity:.7}
 .live-tag{display:inline-block;font-size:.62rem;font-weight:800;letter-spacing:.06em;color:#fff;background:#d9453b;border-radius:4px;padding:1px 5px;margin-right:4px;animation:lvp 1.6s infinite}.gc-final{font-size:.62rem;color:var(--muted)}.gc-missing{margin-top:6px}
 .lv-tag{display:flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;color:var(--hi);margin:12px 0 2px;text-transform:uppercase;letter-spacing:.04em}.lv-dot{width:8px;height:8px;border-radius:50%;background:#d9453b;animation:lvp 1.6s infinite}@keyframes lvp{50%{opacity:.3}}
 .lv-ref{margin-top:14px}.lv-more{border-bottom:1px solid var(--line)}.lv-more>summary{cursor:pointer;padding:12px 2px;font-weight:600}.lv-body{padding-bottom:10px}
@@ -3425,7 +3426,7 @@ Finished: us 3rd Silver · them 1st Silver">L 3–5</button></span></span>
 
 
 
-<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Mon, Nov 16, 10:54 AM</time></span><span class="next-chk" hidden> · Next check <time data-next></time></span> · <a href="team/">Team login</a></footer>
+<footer class="fresh"><span>Checked <time data-fresh data-check="topgun">Mon, Nov 16, 10:57 AM</time></span><span class="next-chk" hidden> · Next check <time data-next></time></span> · <a href="team/">Team login</a></footer>
 </main>
 <nav class="tabbar" aria-label="Sections"><a href="#home" data-view-link="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="#schedule" data-view-link="schedule"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Schedule</span></a><a href="#results" data-view-link="results"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 13v4M8 21h8l-1-4H9z"/></svg><span>Results</span></a><a href="#players" data-view-link="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .3 5.5 2.6 5.5 5.8"/></svg><span>Players</span></a></nav>
 <script>
@@ -3519,9 +3520,15 @@ function showView(v) {
       od.querySelector('.od-right').innerHTML = (live ? '<span class="live-tag">LIVE</span>' : '<span class="badge r-' + r + '">' + r + '</span>') + '<b class="od-sc">' + us + '–' + them + '</b>' + dl;
     }
   };
-  var tick = function () {
-    if (document.visibilityState === 'hidden' || Date.now() < t0 - 30 * 60e3 || Date.now() > t1 + 4 * 3600e3) return;
-    fetch(API + '/live?ids=' + ids.join(','), { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (feeds) {
+  var pill = document.getElementById('lv-pill'), when = document.getElementById('lv-when');
+  var inWindow = function () { return Date.now() >= t0 - 30 * 60e3 && Date.now() <= t1 + 4 * 3600e3; };
+  var place = function () { var v = document.querySelector('.view[data-view="schedule"]'); if (pill) pill.hidden = !inWindow() || !v || v.hidden; };
+  var stamp = function () { if (when) when.textContent = 'Scores ' + new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }); };
+  try { var back = sessionStorage.getItem('bombers-live-scroll'); if (back) { sessionStorage.removeItem('bombers-live-scroll'); setTimeout(function () { scrollTo(0, +back); }, 300); } } catch (e) {}
+  var tick = function (force) {
+    if ((!force && document.visibilityState === 'hidden') || !inWindow()) return Promise.resolve();
+    return fetch(API + '/live?ids=' + ids.join(','), { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (feeds) {
+      stamp();
       games.forEach(function (g) {
         var x = g.ga && find(feeds[g.ga], g.ts, g.b), flip = false;
         if (!x && g.gb) { x = find(feeds[g.gb], g.ts, g.a); flip = !!x; }
@@ -3533,6 +3540,16 @@ function showView(v) {
   };
   tick(); setInterval(tick, 60e3);
   document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') tick(); });
+  place(); addEventListener('hashchange', function () { setTimeout(place, 0); }); document.addEventListener('click', function () { setTimeout(place, 0); });
+  if (pill) pill.addEventListener('click', function (e) {
+    e.stopPropagation(); if (pill.disabled) return; pill.disabled = true; if (when) when.textContent = 'Checking…';
+    var site = location.protocol === 'file:' ? Promise.resolve(null) : fetch('/checked.json?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+    Promise.all([tick(true), site]).then(function (r) {
+      var c = r[1], newer = c && c.topgun && Date.parse(c.topgun) > (cfg.built || 0) + 60e3;
+      if (newer) { try { sessionStorage.setItem('bombers-live-scroll', String(scrollY)); } catch (e) {} location.reload(); return; }
+      stamp(); pill.disabled = false;
+    }, function () { stamp(); pill.disabled = false; });
+  });
 })();
 // When the next Top Gun check should happen — mirrors gate.js: daily (20 h), every 3 h from a week out while the
 // schedule isn't posted, every ~50 min from 3 days before a tournament, every tick during games, and right after midnight once a tournament has ended.
@@ -3791,7 +3808,7 @@ if (location.protocol === 'https:' && 'serviceWorker' in navigator) navigator.se
 (() => {
   if (location.protocol !== 'https:') return;
   const off = document.createElement('div'); off.className = 'offline-note'; off.setAttribute('role', 'status');
-  off.textContent = "You're offline — showing info saved " + "Mon, Nov 16, 10:54 AM";
+  off.textContent = "You're offline — showing info saved " + "Mon, Nov 16, 10:57 AM";
   document.body.prepend(off);
   const sync = () => { off.hidden = navigator.onLine; }; sync();
   addEventListener('online', sync); addEventListener('offline', sync);
