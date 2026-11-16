@@ -8,9 +8,7 @@
   {
    "id": 12418,
    "start": "2026-11-13",
-   "end": "2026-11-15",
-   "firstGame": 480,
-   "lastGame": 1050
+   "end": "2026-11-15"
   },
   {
    "id": 13747,
@@ -18,116 +16,11 @@
    "end": "2027-04-24"
   }
  ],
- "watch": [
-  {
-   "k": "12418|Pool Play|1",
-   "ts": 1794600000000,
-   "ids": [
-    "f98WAvwXVVnk",
-    "5AJkDcwJR6kO"
-   ]
-  },
-  {
-   "k": "12418|Pool Play|2",
-   "ts": 1794604500000,
-   "ids": [
-    "OQzZqDs1aBou",
-    "uOxWA0m9RwjO"
-   ]
-  },
-  {
-   "k": "12418|Pool Play|3",
-   "ts": 1794609000000,
-   "ids": [
-    "1VARQnkH9OuK",
-    "EM6nl5ufzc3X"
-   ]
-  },
-  {
-   "k": "12418|Pool Play|4",
-   "ts": 1794661200000,
-   "ids": [
-    "f98WAvwXVVnk",
-    "OQzZqDs1aBou"
-   ]
-  },
-  {
-   "k": "12418|Pool Play|5",
-   "ts": 1794665700000,
-   "ids": [
-    "5AJkDcwJR6kO",
-    "EM6nl5ufzc3X"
-   ]
-  },
-  {
-   "k": "12418|Pool Play|6",
-   "ts": 1794670200000,
-   "ids": [
-    "1VARQnkH9OuK",
-    "uOxWA0m9RwjO"
-   ]
-  },
-  {
-   "k": "12418|Pool Play|7",
-   "ts": 1794674700000,
-   "ids": [
-    "5AJkDcwJR6kO",
-    "OQzZqDs1aBou"
-   ]
-  },
-  {
-   "k": "12418|Pool Play|8",
-   "ts": 1794681000000,
-   "ids": [
-    "f98WAvwXVVnk",
-    "1VARQnkH9OuK"
-   ]
-  },
-  {
-   "k": "12418|Pool Play|9",
-   "ts": 1794685500000,
-   "ids": [
-    "EM6nl5ufzc3X",
-    "uOxWA0m9RwjO"
-   ]
-  },
-  {
-   "k": "12418|Gold Bracket|1",
-   "ts": 1794763800000,
-   "ids": [
-    "OQzZqDs1aBou",
-    "f98WAvwXVVnk"
-   ]
-  },
-  {
-   "k": "12418|Gold Bracket|2",
-   "ts": 1794774600000,
-   "ids": [
-    "f98WAvwXVVnk",
-    "EM6nl5ufzc3X"
-   ]
-  },
-  {
-   "k": "12418|Silver Bracket|1",
-   "ts": 1794758400000,
-   "ids": [
-    "5AJkDcwJR6kO",
-    "1VARQnkH9OuK"
-   ]
-  },
-  {
-   "k": "12418|Silver Bracket|2",
-   "ts": 1794769200000,
-   "ids": [
-    "5AJkDcwJR6kO",
-    "uOxWA0m9RwjO"
-   ]
-  }
- ],
- "publicHash": "61045559b4ae676c",
- "teamHash": "56dd325bdc60c81c",
+ "watch": [],
+ "publicHash": "c4318963b989c6df",
+ "teamHash": "af7eca2ece68129d",
  "teamsnap": "95285780b136019f",
  "teamsnapAt": "2026-11-14T20:14:26.461Z",
- "topgunHash": "c6a640fbcd155c77",
- "topgunAt": "2026-11-15T18:13:29.650Z"
+ "topgunHash": "579850a639eaad24",
+ "topgunAt": "2026-11-16T05:00:46.484Z"
 }
