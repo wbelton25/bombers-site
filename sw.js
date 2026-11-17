@@ -14,11 +14,24 @@ self.addEventListener('activate', e => e.waitUntil((async () => {
 })()));
 
 // Phone alerts (sent by push.js): show the notification and put a count on the app icon where supported.
+// Alerts older than KEEP_DAYS are dismissed when a new one arrives, so the tray (and Android's icon dot) doesn't pile up.
+const KEEP_DAYS = 3;
+const dropOld = async () => { for (const n of await self.registration.getNotifications()) if (n.timestamp && Date.now() - n.timestamp > KEEP_DAYS * 864e5) n.close(); };
 self.addEventListener('push', e => {
   let m = {}; try { m = e.data ? e.data.json() : {}; } catch (err) {}
   e.waitUntil((async () => {
+    await dropOld();
     await self.registration.showNotification(m.title || 'Bombers update', { body: m.body || '', icon: '/icon-192.png', badge: '/badge-96.png', tag: m.tag, data: { url: m.url || '/' } });
     if (navigator.setAppBadge) await navigator.setAppBadge((await self.registration.getNotifications()).length).catch(() => {});
+  })());
+});
+// The app was opened (the page posts 'seen'): dismiss our alerts and clear the icon count. Done here rather than in the
+// page because the worker owns the notifications (Android draws the icon dot from them).
+self.addEventListener('message', e => {
+  if (e.data !== 'seen') return;
+  e.waitUntil((async () => {
+    for (const n of await self.registration.getNotifications()) n.close();
+    if (navigator.clearAppBadge) await navigator.clearAppBadge().catch(() => {});
   })());
 });
 // Tapping one opens the site (the tab already open, or the app) at the right screen.
