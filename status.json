@@ -1,21 +1,16 @@
 {
  "events": [
   {
-   "id": 12418,
-   "start": "2026-11-13",
-   "end": "2026-11-15"
-  },
-  {
    "id": 13747,
    "start": "2027-04-24",
    "end": "2027-04-24"
   }
  ],
  "watch": [],
- "publicHash": "b533ae3c48b56497",
- "teamHash": "cd882cb217d193d2",
+ "publicHash": "3c38958f67b87fcc",
+ "teamHash": "35092e81619c9d5a",
  "teamsnap": "2cca184b8a1b7c70",
  "teamsnapAt": "2026-11-17T14:00:42.402Z",
- "topgunHash": "ede6b0a9631c2348",
- "topgunAt": "2026-11-25T17:00:40.037Z"
+ "topgunHash": "ea8508bd92a3ff9c",
+ "topgunAt": "2026-11-26T14:00:40.976Z"
 }

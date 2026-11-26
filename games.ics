@@ -8,18 +8,8 @@ X-WR-TIMEZONE:America/New_York
 REFRESH-INTERVAL;VALUE=DURATION:PT1H
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:trn-12418@bombers.beltonglobal.com
-DTSTAMP:20261125T170045Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261116
-SUMMARY:Bombers: Winter (Turf) National Championships
-LOCATION:Charleston\, SC
-DESCRIPTION:Game times not posted yet.\nhttps://playtopgunsports.com/GameT
- imesResults.aspx?trnid=12418
-END:VEVENT
-BEGIN:VEVENT
 UID:trn-13747@bombers.beltonglobal.com
-DTSTAMP:20261125T170045Z
+DTSTAMP:20261126T140044Z
 DTSTART;VALUE=DATE:20270424
 DTEND;VALUE=DATE:20270425
 SUMMARY:Bombers: Spring (TOC) Tournament of Champions · Free Paid Berths

@@ -147,31 +147,6 @@
  ],
  "entries": [
   {
-   "id": 12418,
-   "name": "Winter (Turf) National Championships",
-   "start": "2026-11-13",
-   "end": "2026-11-15",
-   "confirmed": true,
-   "waitlist": false,
-   "age": "10U",
-   "teams": [
-    "Bombers Softball 10U Beck",
-    "Carolina Freedom",
-    "Carolina Wombats 10U- Gray",
-    "TN Mojo 2034-35 Shaw/Parker",
-    "Team North Carolina Tejeda",
-    "Weddington Royals Knight"
-   ],
-   "notes": [
-    "Gates open 1 HOUR prior to 1st game start time.",
-    "SPECTATOR GATES FEES are Cash only Daily",
-    "$12.00 per Adult ages 13 and up",
-    "$10.00 per Child ages 7 to 12",
-    "CLICK HERE for DISCOUNTED HOTELS",
-    "CLICK HERE for 2026 Shipyard Park Rules"
-   ]
-  },
-  {
    "id": 13747,
    "name": "Spring (TOC) Tournament of Champions · Free Paid Berths",
    "start": "2027-04-24",
@@ -246,61 +221,6 @@
   }
  ],
  "events": {
-  "12418": {
-   "name": "Winter (Turf) National Championships",
-   "start": "2026-11-13",
-   "games": [
-    {
-     "key": "12418|Pool Play|3",
-     "section": "Pool Play",
-     "no": "3",
-     "day": "Fri",
-     "time": "5:30 PM",
-     "field": "Shipyard:Shipyard Stewart",
-     "opp": "Team North Carolina Tejeda",
-     "us": "2",
-     "them": "10",
-     "result": "L"
-    },
-    {
-     "key": "12418|Pool Play|6",
-     "section": "Pool Play",
-     "no": "6",
-     "day": "Sat",
-     "time": "10:30 AM",
-     "field": "Shipyard:Shipyard Starboard",
-     "opp": "Carolina Wombats 10U- Gray",
-     "us": "3",
-     "them": "6",
-     "result": "L"
-    },
-    {
-     "key": "12418|Pool Play|8",
-     "section": "Pool Play",
-     "no": "8",
-     "day": "Sat",
-     "time": "1:30 PM",
-     "field": "Shipyard:Shipyard Starboard",
-     "opp": "Weddington Royals Knight",
-     "us": "1",
-     "them": "11",
-     "result": "L"
-    },
-    {
-     "key": "12418|Silver Bracket|1",
-     "section": "Silver Bracket",
-     "no": "1",
-     "day": "Sun",
-     "time": "11:00 AM",
-     "field": "Shipyard:Shipyard Stewart",
-     "opp": "Carolina Freedom",
-     "us": "3",
-     "them": "5",
-     "result": "L"
-    }
-   ],
-   "finish": "3rd · Silver"
-  },
   "12813": {
    "name": "Battle for the 2Lb Chains-Enter Early First (4) Team Receive Softballs",
    "start": "2026-08-22",
